@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="<?=base_url();?>/assets/front/img/ieee.gif" type="image/png">
+	<link rel="icon" href="<?=base_url();?>/assets/front/img/logo_title.png" type="image/png">
 	<title>IEEE SB TKMCE</title>
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/css/bootstrap.css">
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/vendors/linericon/style.css">
@@ -29,9 +29,9 @@
 					</button>
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav justify-content-end">
-							<li class="nav-item active"><a class="nav-link" href="<?=base_url()?>home">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="<?=base_url()?>home">Home</a></li>
 							<li class="nav-item"><a class="nav-link" href="<?=base_url()?>about">About</a></li>
-							<li class="nav-item"><a class="nav-link" href="<?=base_url()?>home">Stories</a></li>
+							<li class="nav-item"><a class="nav-link" href="<?=base_url()?>stories">Stories</a></li>
 							<li class="nav-item"><a class="nav-link" href="<?=base_url()?>join-ieee">Join IEEE</a></li>
 							<li class="nav-item"><a class="nav-link" href="<?=base_url()?>home">Execom</a></li>
 						</ul>
