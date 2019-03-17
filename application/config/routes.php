@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 
+$route['stotries'] = 'Pages/Stories';
 
 $route['default_controller'] = 'pages/index';
 $route['(:any)'] = 'pages/view/$1';

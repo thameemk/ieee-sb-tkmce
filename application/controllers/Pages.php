@@ -20,4 +20,8 @@ class Pages extends CI_Controller {
       $this->load->view('templates/footer');
 
   }
+  function Stories(){
+    echo $this->input->post('stories_id');
+    echo $this->input->post('stories_content');
+  }
 }
