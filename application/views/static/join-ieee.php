@@ -21,16 +21,16 @@
       <div>
         <h3 class="text-heading title_color">How to join?</h3>
         <p class="sample-text">
-          For <b>IEEE international</b>, the membership fee is <b>27$ (USD)</b>. Each <b>IEEE member</b> is a part of the <b>Student Branch</b>.
+          For IEEE international, the membership fee is 27$ (USD). Each IEEE member is a part of the Student Branch.
           Membership is valid for a Calendar Year (not academic year) We start taking applications for memberships from September
-          (posters will be put up and will be announced on website and college/class notice board) or you can<b> <a href="https://www.ieee.org/membership/join/index.html?WT.mc_id=hc_join">Join Now</b>
+          (posters will be put up and will be announced on website and college/class notice board) or you can <a href="https://www.ieee.org/membership/join/index.html?WT.mc_id=hc_join">Join Now
           </a>
         </p>
       </div>
       <div class="pt-5">
         <h3 class="text-heading title_color">Why join IEEE?</h3>
         <p class="sample-text">
-          IEEE memberships support <b>technical innovation</b> for humanity and the profession. Access to cutting-edge information,
+          IEEE memberships support technical innovation for humanity and the profession. Access to cutting-edge information,
           networking opportunities, career enhancement, and many other exclusive member benefits are the key values of IEEE membership.
           </a>
         </p>

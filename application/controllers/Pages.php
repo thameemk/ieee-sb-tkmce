@@ -2,6 +2,10 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Pages extends CI_Controller {
+  function __construct() {
+      parent::__construct();
+      $this->load->model('report_model');
+    }
 
   function index()
 	{
@@ -20,8 +24,20 @@ class Pages extends CI_Controller {
       $this->load->view('templates/footer');
 
   }
-  function Stories(){
-    echo $this->input->post('stories_id');
-    echo $this->input->post('stories_content');
+  function stories(){
+
+      $data['stories']=$this->report_model->get_stories();
+
+      // $this->load->model('report_model');
+      // $story = $this->report_model->get_stories();
+      // $data['story_title'] = $story['story_title'];
+      // $data['story_content'] = $story['story_content'];
+      // $data['events'] = $story['story_date'];
+
+
+      $this->load->view('templates/header');
+      $this->load->view('dynamic/stories',$data);
+      $this->load->view('templates/footer');
+
   }
 }

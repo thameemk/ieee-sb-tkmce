@@ -10,21 +10,18 @@
       </div>
     </div>
     <div class="row feature_inner">
+      <?php
+      foreach($stories as $row){
+      ?>
       <div class="col-lg-4 col-md-6">
         <div class="feature_item">
-
-          <h4>Program 1</h4>
-          <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+          <p class="font-weight-bold"><?=$row['story_date']?></p>
+          <h4 class="mt-3 "><?=$row['story_title'] ?></h4>
+          <p style="text-align:justify;"><?=$row['story_content'] ?></p>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="feature_item">
+<?php } ?>
 
-          <h4>Program 1</h4>
-          <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
-        </div>
-      </div>
-      
     </div>
   </div>
 </section>
