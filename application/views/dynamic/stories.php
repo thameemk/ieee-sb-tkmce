@@ -18,6 +18,8 @@
           <p class="font-weight-bold"><?=$row['story_date']?></p>
           <h4 class="mt-3 "><?=$row['story_title'] ?></h4>
           <p style="text-align:justify;"><?=$row['story_content'] ?></p>
+          <br>
+          <button type="submit"  class="btn btn-primary">Readmore</botton>
         </div>
       </div>
 <?php } ?>
