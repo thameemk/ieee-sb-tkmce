@@ -27,14 +27,6 @@ class Pages extends CI_Controller {
   function stories(){
 
       $data['stories']=$this->report_model->get_stories();
-
-      // $this->load->model('report_model');
-      // $story = $this->report_model->get_stories();
-      // $data['story_title'] = $story['story_title'];
-      // $data['story_content'] = $story['story_content'];
-      // $data['events'] = $story['story_date'];
-
-
       $this->load->view('templates/header');
       $this->load->view('dynamic/stories',$data);
       $this->load->view('templates/footer');
