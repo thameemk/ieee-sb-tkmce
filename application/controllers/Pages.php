@@ -24,12 +24,35 @@ class Pages extends CI_Controller {
       $this->load->view('templates/footer');
 
   }
-  function stories(){
+  function stories($title=""){
 
-      $data['stories']=$this->report_model->get_stories();
+      if($title==""){
+
+        $data['stories']=$this->report_model->get_stories();
       $this->load->view('templates/header');
       $this->load->view('static/stories',$data);
       $this->load->view('templates/footer');
+    }
+    else{
+      $temp = $this->report_model->get_stories($title);
+      // echo count($temp);
+      if(count($temp)==1){
+      $data['story']=$temp[0];
 
+      $this->load->view('templates/header');
+      $this->load->view('static/single-story',$data);
+      $this->load->view('templates/footer');
+    }
+    else {
+      {show_404();}
+    }
+    }
+
+  }
+  function execom(){
+    $data['execom']=$this->report_model->get_execom();
+    $this->load->view('templates/header');
+    $this->load->view('static/execom',$data);
+    $this->load->view('templates/footer');
   }
 }

@@ -33,7 +33,7 @@
 							<li class="nav-item"><a class="nav-link" href="<?=base_url()?>about">About</a></li>
 							<li class="nav-item"><a class="nav-link" href="<?=base_url()?>stories">Stories</a></li>
 							<li class="nav-item"><a class="nav-link" href="<?=base_url()?>join-ieee">Join IEEE</a></li>
-							<li class="nav-item"><a class="nav-link" href="<?=base_url()?>home">Execom</a></li>
+							<li class="nav-item"><a class="nav-link" href="<?=base_url()?>execom">Execom</a></li>
 						</ul>
 					</div>
 				</div>
