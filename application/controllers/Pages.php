@@ -7,13 +7,28 @@ class Pages extends CI_Controller {
       $this->load->model('report_model');
     }
 
-  function index()
-	{
-		$this->load->view('templates/header');
-    $this->load->view('static/home');
-    $this->load->view('templates/footer');
+  function home($title=""){
 
-	}
+      if($title==""){
+      $data['events']=$this->report_model->upcoming_events();
+      $this->load->view('templates/header');
+      $this->load->view('static/home',$data);
+      $this->load->view('templates/footer');
+    }
+    else{
+      $temp = $this->report_model->upcoming_events($title);
+      if(count($temp)==1){
+      $data['event']=$temp[0];
+      $this->load->view('templates/header');
+      $this->load->view('static/single-event',$data);
+      $this->load->view('templates/footer');
+    }
+    else {
+      {show_404();}
+    }
+    }
+
+  }
   function view($page){
 
       if ( ! file_exists(APPPATH.'views/static/'.$page.'.php')){
@@ -27,18 +42,15 @@ class Pages extends CI_Controller {
   function stories($title=""){
 
       if($title==""){
-
-        $data['stories']=$this->report_model->get_stories();
+      $data['stories']=$this->report_model->get_stories();
       $this->load->view('templates/header');
       $this->load->view('static/stories',$data);
       $this->load->view('templates/footer');
     }
     else{
       $temp = $this->report_model->get_stories($title);
-      // echo count($temp);
       if(count($temp)==1){
       $data['story']=$temp[0];
-
       $this->load->view('templates/header');
       $this->load->view('static/single-story',$data);
       $this->load->view('templates/footer');

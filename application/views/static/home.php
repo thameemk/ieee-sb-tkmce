@@ -1,11 +1,47 @@
+<section class="banner_area">
+  <div class="banner_inner d-flex align-items-center">
+    <div class="container">
+      <div class="banner_content text-center">
+        <h2>Home</h2>
+        <div class="page_link">
+          <a href="<?=base_url()?>home">Home</a>
+          <!-- <a href="<?=base_url()?>about">About</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <section>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="<?php echo base_url();?>assets/upload/1.jpg" style="height:600px; width:auto;" alt="First slide">
+    </div>
+
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</section> -->
 <!--================ Start Home Banner Area =================-->
-<section class="home_banner_area " style="margin-bottom:100px;">
+<!-- <section class="home_banner_area " style="margin-bottom:100px;">
   <div class="banner_inner">
     <div class="container">
       <div class="row">
         <div class="col-lg-7">
           <div class="banner_content">
-            <!-- <h3 class="text-uppercase">Hell0</h3> -->
+
             <h1 class="text-uppercase">IEEE SB TKMCE</h1>
             <h5 align="justify">Bringing the benefits of the great organization to the society and to contribute to the technical centric approach</h5>
             <div class="d-flex align-items-center">
@@ -22,11 +58,11 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!--================ End Home Banner Area =================-->
 <!--================ Srart Brand Area =================-->
-<section class="brand_area section_gap_bottom ">
+<section class="brand_area section_gap_bottom mt-5 ">
   <div class="container">
     <div class="main_title">
       <h2>SOCIETIES</h2>
@@ -95,33 +131,28 @@
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
         <div class="main_title">
-          <h2>Latest Stories</h2>
+          <h2>Upcoming Events</h2>
 
         </div>
       </div>
     </div>
+
     <div class="row feature_inner">
+      <?php
+      foreach($events as $row){
+      ?>
       <div class="col-lg-4 col-md-6">
         <div class="feature_item">
+          <p class="font-weight-bold"><?=$row['event_date']?></p>
 
-          <h4>Program 1</h4>
-          <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+          <h4><?=$row['event_title'] ?></h4>
+          <p align="justify"><?=$row['short_content'] ?></p>
+          <a><button type="submit"  class="btn btn-primary" onclick="window.location='<?php echo base_url("home/".$row['link'])?>'">Readmore</botton></a>
+
         </div>
       </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="feature_item">
+    <?php } ?>
 
-          <h4>Program 1</h4>
-          <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="feature_item">
-
-          <h4>Program 1</h4>
-          <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
-        </div>
-      </div>
     </div>
   </div>
 </section>

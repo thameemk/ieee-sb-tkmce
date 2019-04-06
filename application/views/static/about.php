@@ -76,17 +76,5 @@
 
       </div>
     </div>
-    <div class="section-top-border">
-      <h3 class="mb-30 title_color">Sustainable farming</h3>
-      <div class="row">
-        <div class="col-lg-12">
-          <blockquote class="generic-blockquote">
-            Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of
-            choice and
-            careful consideration for nature and communities.
-          </blockquote>
-        </div>
-      </div>
-    </div>
   </div>
 </div>

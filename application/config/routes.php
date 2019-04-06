@@ -2,11 +2,16 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 
-$route['default_controller'] = 'pages/index';
+$route['default_controller'] = 'pages/home';
+// $route['home'] = 'pages/index';
+$route['home/(.+)'] = 'pages/home/$1';
+
+
 $route['stories'] = 'pages/stories';
 $route['stories/(.+)'] = 'pages/stories/$1';
 
 $route['execom'] = 'pages/execom';
+$route['admin_login'] = 'Login/index';
 
 $route['(:any)'] = 'pages/view/$1';
 $route['404_override'] = '';

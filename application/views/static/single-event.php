@@ -1,9 +1,9 @@
 <section class="blog_area single-post-area section_gap">
     <div class="container">
-      <h2 class="pb-5 text-center"><?=$story['story_title']?></h2>
+      <h2 class="pb-5 text-center"><?=$event['event_title']?></h2>
             <div class="row">
               <div class="feature-img">
-              <img class="img-fluid " style=" height: 300px;" src="<?php echo base_url();?>assets/upload/<?=$story['story_image_link']?>" alt="">
+              <img class="img-fluid " style=" height: 300px;" src="<?php echo base_url();?>assets/upload/<?=$event['img_lnk']?>" alt="">
             </div>
           </div>
 
@@ -11,7 +11,7 @@
                   <div class="row">
                     <div class=" blog_details">
                         <p class="excert">
-                          <?=$story['full_content']?>
+                          <?=$event['full_content']?>
                         </p>
                     </div>
                   </div>

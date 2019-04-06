@@ -29,11 +29,11 @@
 					</button>
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav justify-content-end">
-							<li class="nav-item"><a class="nav-link" href="<?=base_url()?>home">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="<?=base_url()?>about">About</a></li>
-							<li class="nav-item"><a class="nav-link" href="<?=base_url()?>stories">Stories</a></li>
-							<li class="nav-item"><a class="nav-link" href="<?=base_url()?>join-ieee">Join IEEE</a></li>
-							<li class="nav-item"><a class="nav-link" href="<?=base_url()?>execom">Execom</a></li>
+							<li class="nav-item"><a class="nav-link" style="color:#0027ff;" href="<?=base_url()?>home">Home</a></li>
+							<li class="nav-item"><a class="nav-link" style="color:#0027ff;" href="<?=base_url()?>about">About</a></li>
+							<li class="nav-item"><a class="nav-link" style="color:#0027ff;" href="<?=base_url()?>stories">Stories</a></li>
+							<li class="nav-item"><a class="nav-link" style="color:#0027ff;" href="<?=base_url()?>join-ieee">Join IEEE</a></li>
+							<li class="nav-item"><a class="nav-link" style="color:#0027ff;" href="<?=base_url()?>execom">Execom</a></li>
 						</ul>
 					</div>
 				</div>
