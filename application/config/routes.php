@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 $route['default_controller'] = 'pages/home';
-// $route['home'] = 'pages/index';
+$route['home'] = 'pages/home';
 $route['home/(.+)'] = 'pages/home/$1';
 
 
