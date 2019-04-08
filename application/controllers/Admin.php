@@ -17,4 +17,22 @@ class Admin extends CI_Controller {
         $this->load->view('admin_home');
         $this->load->view('templates/footer');
     }
+
+    public function process()
+    {
+      $this->load->model('report_model');
+      $temp = $this->input->post('title');
+      $link = preg_replace('/\s+/', '-', $temp);
+      $data = array(
+        'story_title' => $this->input->post('title'),
+        'story_date' => $this->input->post('date'),
+        'story_content' => $this->input->post('smessage'),
+        'full_content' => $this->input->post('lmessage'),
+      );
+      $data['link']=$link;
+      $this->report_model->form($data);
+      $this->session->set_flashdata('msg', 'Data Inserted Successfully');
+      redirect('Admin/home');
+
+    }
 }

@@ -46,7 +46,6 @@ class Report_model extends CI_Model {
                  $data = array(
                      'lid' => $row->lid,
                      'user_email' => $row->user_email,
-                     'loginname' => $row->name,
                      'validated' => true
                  );
                  $this->session->set_userdata($data);
@@ -59,5 +58,9 @@ class Report_model extends CI_Model {
 
          }
          return false;
+     }
+
+     public function form($data){
+       $this->db->insert('ieee_story', $data);
      }
 }
