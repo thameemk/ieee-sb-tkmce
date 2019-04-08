@@ -34,7 +34,7 @@
 							<li class="nav-item"><a class="nav-link" style="color:#0027ff;" href="<?=base_url()?>stories">Stories</a></li>
 							<li class="nav-item"><a class="nav-link" style="color:#0027ff;" href="<?=base_url()?>join-ieee">Join IEEE</a></li>
 							<li class="nav-item"><a class="nav-link" style="color:#0027ff;" href="<?=base_url()?>execom">Execom</a></li>
-							<li class="nav-item"><a class="nav-link" style="color:#0027ff;" href="<?=base_url()?>admin_login">Login</a></li>
+							<li class="nav-item"><a class="nav-link" style="color:#0027ff;" href="<?=base_url()?>Login/logout">Logout</a></li>
 						</ul>
 					</div>
 				</div>
