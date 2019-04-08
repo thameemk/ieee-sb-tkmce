@@ -13,7 +13,8 @@ class Admin extends CI_Controller {
     }
     public function home()
     {
-        // $data['categories']=$this->report_model->get_categories();
+        $this->load->view('templates/header');
         $this->load->view('admin_home');
+        $this->load->view('templates/footer');
     }
 }

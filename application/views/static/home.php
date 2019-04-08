@@ -5,35 +5,13 @@
         <h2>Home</h2>
         <div class="page_link">
           <a href="<?=base_url()?>home">Home</a>
-          <!-- <a href="<?=base_url()?>about">About</a> -->
+
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- <section>
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="<?php echo base_url();?>assets/upload/1.jpg" style="height:600px; width:auto;" alt="First slide">
-    </div>
 
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</section> -->
 <!--================ Start Home Banner Area =================-->
 <!-- <section class="home_banner_area " style="margin-bottom:100px;">
   <div class="banner_inner">
@@ -157,29 +135,3 @@
   </div>
 </section>
 <!--================ End Features Area =================-->
-
-
-<!--================ Start Newsletter Area =================-->
-<section class="newsletter_area">
-  <div class="container">
-    <div class="row justify-content-center align-items-center">
-      <div class="col-lg-12">
-        <div class="subscription_box text-center">
-          <h2 class="text-uppercase text-white">CONTACT US</h2>
-
-          <div class="subcribe-form" id="">
-            <form target="_blank" novalidate="true" action="" method="post" class="subscription relative">
-              <input name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" type="email"><br><br>
-              <input name="name" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'" required="" type="text"><br><br>
-              <input name="message" placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'" required="" type="text"><br><br>
-
-              <button class="primary-btn hover d-inline">SUBMIT</button>
-              <div class="info"></div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--================ End Newsletter Area =================-->

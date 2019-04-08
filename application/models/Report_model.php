@@ -30,7 +30,7 @@ class Report_model extends CI_Model {
         return $query->result_array();
       }
       public function login(){
-       $user_email = $this->security->xss_clean($this->input->post('user_email'));
+       $user_email = $this->security->xss_clean($this->input->post('username'));
        $password = $this->security->xss_clean($this->input->post('password'));
 
        $this->db->where('user_email',$user_email);
@@ -39,11 +39,10 @@ class Report_model extends CI_Model {
        // $num_rows=$this->db->count_all_results('userlogin');
 
        $num_rows=$query->num_rows();
-
        if($num_rows == 1)
        {
              $row = $query->row();
-             if (password_verify($password, $row->password)) {
+             if (password_verify($password, $row->user_password)) {
                  $data = array(
                      'lid' => $row->lid,
                      'user_email' => $row->user_email,

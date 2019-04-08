@@ -6,12 +6,13 @@ $route['default_controller'] = 'pages/home';
 $route['home'] = 'pages/home';
 $route['home/(.+)'] = 'pages/home/$1';
 
-
 $route['stories'] = 'pages/stories';
 $route['stories/(.+)'] = 'pages/stories/$1';
 
 $route['execom'] = 'pages/execom';
 $route['admin_login'] = 'Login/index';
+
+$route['email'] = 'Email_Controller/index';
 
 $route['(:any)'] = 'pages/view/$1';
 $route['404_override'] = '';
