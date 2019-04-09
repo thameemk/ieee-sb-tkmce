@@ -24,6 +24,12 @@ class Report_model extends CI_Model {
           return $query->result_array();
       }
 
+      public function chapters(){
+        $this->db->select('clink','cname');
+        $query = $this->db->get('chapters');
+        return $query->result_array();
+      }
+
       public function get_execom(){
         $this->db->select('id,name,position,contact,image');
         $query = $this->db->get('execom2019');

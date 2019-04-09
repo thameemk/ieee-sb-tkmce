@@ -10,7 +10,7 @@
                 <div class="posts-list">
                   <div class="row">
                     <div class=" blog_details">
-                        <p class="excert">
+                        <p class="excert ml-3 mr-3 text-justify">
                           <?=$story['full_content']?>
                         </p>
                     </div>

@@ -6,11 +6,10 @@
               <img class="img-fluid " style=" height: 300px;" src="<?php echo base_url();?>assets/upload/<?=$event['img_lnk']?>" alt="">
             </div>
           </div>
-
                 <div class="posts-list">
                   <div class="row">
                     <div class=" blog_details">
-                        <p class="excert">
+                        <p class="excert ml-3 mr-3 text-justify">
                           <?=$event['full_content']?>
                         </p>
                     </div>

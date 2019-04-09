@@ -10,6 +10,7 @@ class Pages extends CI_Controller {
   function home($title=""){
 
       if($title==""){
+      $data['chapters']=$this->report_model->chapters();
       $data['events']=$this->report_model->upcoming_events();
       $this->load->view('templates/header');
       $this->load->view('static/home',$data);
