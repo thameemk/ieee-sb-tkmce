@@ -40,7 +40,11 @@
 							<li class="nav-item"><a class="nav-link" style="color:#0027ff;" href="<?=base_url()?>stories">Stories</a></li>
 							<li class="nav-item"><a class="nav-link" style="color:#0027ff;" href="<?=base_url()?>join-ieee">Join IEEE</a></li>
 							<li class="nav-item"><a class="nav-link" style="color:#0027ff;" href="<?=base_url()?>execom">Execom</a></li>
-							<li class="nav-item"><a class="nav-link" style="color:#0027ff;" href="<?=base_url()?>admin_login">Login</a></li>
+							<?php if ($this->session->userdata('user_email') == TRUE) {?>
+								<li class="nav-item"><a class="nav-link" style="color:#0027ff;" href="<?=base_url()?>Login/logout">Logout</a></li>
+							<?php } else { ?>
+								<li class="nav-item"><a class="nav-link" style="color:#0027ff;" href="<?=base_url()?>admin_login">Login</a></li>
+							<?php } ?>
 						</ul>
 					</div>
 				</div>

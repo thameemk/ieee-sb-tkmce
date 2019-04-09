@@ -36,7 +36,7 @@ class Report_model extends CI_Model {
         return $query->result_array();
       }
       public function login(){
-       $user_email = $this->security->xss_clean($this->input->post('username'));
+       $user_email = $this->security->xss_clean($this->input->post('user_email'));
        $password = $this->security->xss_clean($this->input->post('password'));
 
        $this->db->where('user_email',$user_email);

@@ -29,7 +29,7 @@
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <i class="fas fa-envelope prefix grey-text"></i>
-          <input type="text" id="defaultForm-email" name="username" class="form-control validate">
+          <input type="text" id="defaultForm-email" name="user_email" class="form-control validate">
         </div>
         <div class="md-form mb-4">
           <i class="fas fa-lock prefix grey-text"></i>

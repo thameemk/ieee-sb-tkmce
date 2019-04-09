@@ -11,14 +11,14 @@
                                     </div>
                                     <div class="desc">
                                         <h5><span><?=$row['name'] ?></span></h5>
-                                        <!-- <p class="date">December 4, 2017 at 3:12 pm </p> -->
+
                                         <p class="comment">
                                             <?=$row['position'] ?>
                                         </p>
                                     </div>
                                 </div>
                                 <div class="reply-btn">
-                                        <a href="tel:+91<?=$row['contact'] ?>" class="btn-reply text-uppercase">Connect</a>
+                                        <a href="mailto:<?=$row['contact'] ?>" class="btn-reply text-uppercase">Connect</a>
                                 </div>
                             </div>
                             <br><br>
