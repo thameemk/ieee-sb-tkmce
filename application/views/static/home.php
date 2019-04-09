@@ -4,7 +4,7 @@
   <img src="<?=base_url();?>/assets/front/img/3.jpg"  style="width:100%;height:450px;" class="img-fluid myslides" >
   <img src="<?=base_url();?>/assets/front/img/4.jpg"  style="width:100%;height:450px;" class="img-fluid myslides" >
 </section>
-<section class="brand_area section_gap_bottom mt-5 ">
+<section class="mb-5 mt-5 ">
   <div class="container">
     <div class="main_title">
       <h2>SOCIETIES</h2>
