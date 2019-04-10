@@ -10,7 +10,7 @@
           <div class="subcribe-form" id="">
              <?php
                      echo $this->session->flashdata('email_sent');
-                     echo form_open('/Email_controller/send_mail');
+
             ?>
             <div class="subscription relative">
               <input name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" type="email"><br><br>
@@ -21,7 +21,7 @@
               <div class="info"></div>
             </div>
             <?php
-            echo form_close();
+          
             ?>
           </div>
         </div>
