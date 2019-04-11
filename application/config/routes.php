@@ -12,6 +12,7 @@ $route['stories/(.+)'] = 'pages/stories/$1';
 $route['execom'] = 'pages/execom';
 $route['admin_login'] = 'Login/index';
 
+
 $route['email'] = 'Email_Controller/index';
 
 $route['(:any)'] = 'pages/view/$1';

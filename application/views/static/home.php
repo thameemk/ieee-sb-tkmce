@@ -7,7 +7,7 @@
 <section class="mb-5 mt-5 ">
   <div class="container">
     <div class="main_title">
-      <h2>SOCIETIES</h2>
+      <h2 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">SOCIETIES</h2>
     </div>
     <div class="row justify-content-center">
       <div class="col-lg-6">
@@ -33,7 +33,7 @@
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
         <div class="main_title">
-          <h2>Upcoming Events</h2>
+          <h2 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">Upcoming Events</h2>
         </div>
       </div>
     </div>
@@ -42,9 +42,10 @@
       foreach($events as $row){
       ?>
       <div class="col-lg-4 col-md-6">
-        <div class="feature_item">
+        <div class="feature_item" style="box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+        background: #fff;">
           <p class="font-weight-bold"><?=$row['event_date']?></p>
-          <h4><?=$row['event_title'] ?></h4>
+          <h4 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;"><?=$row['event_title'] ?></h4>
           <p align="justify"><?=$row['short_content'] ?></p>
           <a><button type="submit"  class="btn btn-primary" onclick="window.location='<?php echo base_url("home/".$row['link'])?>'">Readmore</botton></a>
         </div>

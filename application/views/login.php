@@ -1,47 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <title>Admin Login | IEEE SB TKMCE</title>
+
+  <!-- for-mobile-apps -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="icon" href="<?=base_url();?>/assets/front/img/logo_title.png" type="image/png">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Admin Login | IEEE SB TKMCE </title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/css/mdb.min.css" rel="stylesheet">
-  <style>
-    .vertical {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-    }
-  </style>
+
+  <!-- css files -->
+  <link href="<?=base_url();?>assets/login/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+  <link href="<?=base_url();?>assets/login/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
+  <link href="<?=base_url();?>assets/login/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
+  <!-- //css files -->
+
+  <!-- google fonts -->
+  <link href="//fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+  <!-- //google fonts -->
+
 </head>
 
 <body>
-  <div class="vertical modal-dialog" role="document">
-    <div class="modal-content">
-    <form method="post" action="<?=base_url("Login/process")?>">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">SIGN IN</h4>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <i class="fas fa-envelope prefix grey-text"></i>
-          <input type="text" id="defaultForm-email" name="user_email" class="form-control validate">
-        </div>
-        <div class="md-form mb-4">
-          <i class="fas fa-lock prefix grey-text"></i>
-          <input type="password" id="defaultForm-pass" name="password" class="form-control validate">
-        </div>
-      </div>
-      <div class="modal-footer d-flex justify-content-center">
-        <button class="btn btn-default" type="submit">Login</button>
-      </div>
-    </form>
-    </div>
-  </div>
-</body>
+	<div class="popup">
+		<div class="login px-sm-4 mx-auto mw-100">
+			<h5 class="text-center mb-4">Login to cPanel<h5>
+			<form action="<?=base_url("Login/process")?>" method="post">
+				<div class="form-group">
+					<label class="mb-2">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" name="user_email" aria-describedby="emailHelp" placeholder="" required="">
+				</div>
+				<div class="form-group">
+					<label class="mb-2">Password</label>
+					<input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="" required="">
+				</div>
+				<button type="submit" class="btn btn-primary submit mt-2">Login</button>
+				<p class="text-center mt-2">
+          <a class="ml-3" href="<?=base_url()?>home">Home</a>
 
+				</p>
+			</form>
+		</div>
+
+	</div>
+</body>
 </html>
