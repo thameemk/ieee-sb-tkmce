@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-md-4 ">
         <div class="footer_top flex-column">
-          <h3>Quick Links</h3>
+          <h3 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">Quick Links</h3>
           <ul>
             <li><a href="https://www.ieee.org/">IEEE</a></li>
             <li><a href="https://ieeexplore.ieee.org/">IEEE Xplore Digital Library</a></li>
@@ -15,7 +15,7 @@
       </div>
       <div class="col-md-4 ">
         <div class="footer_top flex-column">
-          <h3>Follow Us</h3>
+          <h3 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">Follow Us</h3>
           <div class="footer_social" style="text-align:left;">
             <a href="https://www.facebook.com/ieeesbtkmce"><i class="fa fa-facebook"></i></a>
             <a href="https://www.twitter.com/IEEEorg"><i class="fa fa-twitter"></i></a>
@@ -25,7 +25,7 @@
       </div>
       <div class="col-md-4 ">
         <div class="footer_top flex-column">
-          <h3>Address</h3>
+          <h3 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">Address</h3>
           <p>TKM College of Engineering<br>
             Karicode, Kollam, Kerala<br>
             PIN : 691005<br>
