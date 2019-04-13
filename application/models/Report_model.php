@@ -67,6 +67,6 @@ class Report_model extends CI_Model {
      }
 
      public function form($data){
-       $this->db->insert('upcoming_events', $data);
+       $this->db->insert('ieee_story', $data);
      }
 }
