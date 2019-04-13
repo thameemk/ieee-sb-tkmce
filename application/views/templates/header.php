@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/css/magnific-popup.css">
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/vendors/nice-select/css/nice-select.css">
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/css/style.css">
-	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/> 
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<style>
 	.myslides {display:none;}
@@ -39,7 +39,7 @@
 							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>home">Home</a></li>
 							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>about">About</a></li>
 							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>stories">Stories</a></li>
-							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>join-ieee">Join IEEE</a></li>
+							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>contact">Contact</a></li>
 							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>execom">Execom</a></li>
 							<?php if ($this->session->userdata('user_email') == TRUE) {?>
 								<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>Login/logout">Logout</a></li>

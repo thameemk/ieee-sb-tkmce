@@ -29,11 +29,11 @@
           <p>TKM College of Engineering<br>
             Karicode, Kollam, Kerala<br>
             PIN : 691005<br>
-            <h5>Chairperson</h5>
+            <h5 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">Chairperson</h5>
             Pranav Pramod : <a href="tel:+919995947269">+91 9995947269</a>
-            <h5>Counselor</h5>
+            <h5 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">Counselor</h5>
             Mrs. Reshna S : <a href="tel:+919496410839">+91 9496410839</a>
-            <h5>Webmaster</h5>
+            <h5 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">Webmaster</h5>
             Thameem K : <a href="tel:+918281582725">+91 8281582725</a>
           </p>
         </div>

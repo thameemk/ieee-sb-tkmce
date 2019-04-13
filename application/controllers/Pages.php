@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Pages extends CI_Controller {
   function __construct() {
       parent::__construct();
+       $this->load->library('form_validation');
       $this->load->model('report_model');
     }
 
@@ -68,53 +69,4 @@ class Pages extends CI_Controller {
     $this->load->view('static/execom',$data);
     $this->load->view('templates/footer');
   }
-
-  public function contact()
-    {
-
-    $this->load->library('email');
-    $this->load->library('form_validation');
-
-    //Get the form data
-    $name = $this->input->post('name');
-    $from_email = $this->input->post('email');
-    $subject = $this->input->post('subject');
-    $message = $this->input->post('message');
-
-    //Web master email
-    $to_email = 'thameemk612@yahoo.com'; //Webmaster email, who receive mails
-
-    //Mail settings
-    $config['protocol'] = 'smtp';
-    $config['smtp_host'] = 'ssl://smtp.gmail.com';
-    $config['smtp_port'] = '465';
-    $config['smtp_user'] = 'thameemk612@yahoo.com'; // Your email address
-    $config['smtp_pass'] = 'Nafeesa@@##**987'; // Your email account password
-    $config['mailtype'] = 'html'; // or 'text'
-    $config['charset'] = 'iso-8859-1';
-    $config['wordwrap'] = TRUE; //No quotes required
-    $config['newline'] = "\r\n"; //Double quotes required
-
-    $this->email->initialize($config);
-
-    //Send mail with data
-    $this->email->from($from_email, $name);
-    $this->email->to($to_email);
-    $this->email->subject($subject);
-    $this->email->message($message);
-
-    if ($this->email->send())
-    {
-        $this->session->set_flashdata('msg','<div class="alert alert-success">Mail sent!</div>');
-        $this->load->view('templates/header');
-        $this->load->view('static/contact');
-        $this->load->view('templates/footer');
-    } else {
-        $this->session->set_flashdata('msg','<div class="alert alert-danger">Problem in sending</div>');
-        $this->load->view('templates/header');
-        $this->load->view('static/contact');
-        $this->load->view('templates/footer');
-
-    }
-}
 }

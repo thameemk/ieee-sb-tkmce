@@ -54,3 +54,20 @@
     </div>
   </div>
 </section>
+<!-- Start Sample Area -->
+<section class="sample-text-area">
+  <div class="container">
+    <div class="main_title">
+      <h2 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">Join ieee</h2>
+    </div>
+    <div>
+      <h3 class="text-heading title_color" style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">How to join?</h3>
+      <p class="sample-text text-justify">
+        For IEEE international, the membership fee is 27$ (USD). Each IEEE member is a part of the Student Branch.
+        Membership is valid for a Calendar Year (not academic year) We start taking applications for memberships from September
+        (posters will be put up and will be announced on website and ...<a href="<?=base_url()?>join-ieee">Readmore</a>
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
