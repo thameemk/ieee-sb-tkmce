@@ -106,11 +106,15 @@ class Pages extends CI_Controller {
     if ($this->email->send())
     {
         $this->session->set_flashdata('msg','<div class="alert alert-success">Mail sent!</div>');
-
-        redirect('contact');
+        $this->load->view('templates/header');
+        $this->load->view('static/contact');
+        $this->load->view('templates/footer');
     } else {
         $this->session->set_flashdata('msg','<div class="alert alert-danger">Problem in sending</div>');
-        // $this->load->view('contact');
+        $this->load->view('templates/header');
+        $this->load->view('static/contact');
+        $this->load->view('templates/footer');
+
     }
 }
 }

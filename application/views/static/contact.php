@@ -2,15 +2,18 @@
 <!--================ Start Newsletter Area =================-->
 <section class="newsletter_area">
   <div class="container">
-    <?php echo $this->session->flashdata('msg'); ?>
+
 
     <div class="row justify-content-center align-items-center">
       <div class="col-lg-12">
-        <div class="subscription_box text-center">
+        <div class="subscription_box text-center pb-5" style="background:#00629B">
+
+          <?php echo $this->session->flashdata('msg'); ?>
+
           <h2 class="text-uppercase text-white">CONTACT US</h2>
 
           <div class="subcribe-form" id="">
-              <form action="contact" method="post">
+          <form action="<?=base_url("Pages/contact")?>" method="post">
             <div class="subscription relative">
               <input name="email" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" type="email"><br><br>
               <input name="name" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'" required="" type="text"><br><br>
