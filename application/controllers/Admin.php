@@ -29,6 +29,11 @@ class Admin extends CI_Controller {
         'story_date' => $this->input->post('date'),
         'story_content' => $this->input->post('smessage'),
         'full_content' => $this->input->post('lmessage'),
+        'venue' => $this->input->post('venue'),
+        'category' => $this->input->post('category'),
+        'attendice' => $this->input->post('attendice'),
+
+
       );
       $data['link']=$link;
       $this->report_model->form($data);
