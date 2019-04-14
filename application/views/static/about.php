@@ -22,7 +22,7 @@
       <h3 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;" class="mb-30 title_color">About TKM College of Engineering</h3>
       <div class="row">
         <div class="col-md-3">
-          <img src="http://tkmce.ac.in/wp-content/themes/tkm/images/tkmce_logo.png" alt="" class="img-fluid">
+          <img src="https://tkmce.ac.in/wp-content/themes/tkm/images/tkmce_logo.png" alt="" class="img-fluid">
           <img src="<?=base_url();?>/assets/front/img/tkm_about.jpg" alt="" class="img-fluid mt-3">
         </div>
         <div class="col-md-9 mt-sm-20 left-align-p text-justify">
