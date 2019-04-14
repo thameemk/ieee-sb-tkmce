@@ -8,7 +8,7 @@ class Report_model extends CI_Model {
       public function get_stories($title=""){
           $this->db->select('story_date,story_title,story_content,link');
           if($title!=""){
-            $this->db->select('full_content,story_image_link');
+            $this->db->select('full_content,story_image_link,story_image_link_2,story_image_link_3,tags');
             $this->db->where('link',$title);
           }
           $query = $this->db->get('ieee_story');
@@ -69,4 +69,10 @@ class Report_model extends CI_Model {
      public function form($data){
        $this->db->insert('ieee_story', $data);
      }
+     public function get_tags(){
+       $this->db->select('tag');
+       $query = $this->db->get('tags');
+       return $query->result_array();
+     }
+
 }

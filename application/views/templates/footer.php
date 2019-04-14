@@ -6,10 +6,10 @@
         <div class="footer_top flex-column">
           <h3 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">Quick Links</h3>
           <ul>
-            <li><a href="https://www.ieee.org/">IEEE</a></li>
-            <li><a href="https://ieeexplore.ieee.org/">IEEE Xplore Digital Library</a></li>
-            <li><a href="https://ieee-collabratec.ieee.org/">IEEE Collabratec</a></li>
-            <li><a href="http://spectrum.ieee.org/">IEEE Spectrum Online</a></li>
+            <a href="https://www.ieee.org/">IEEE</a>
+            <br><a href="https://ieeexplore.ieee.org/">IEEE Xplore Digital Library</a>
+            <br><a href="https://ieee-collabratec.ieee.org/">IEEE Collabratec</a>
+            <br><a href="http://spectrum.ieee.org/">IEEE Spectrum Online</a>
           </ul>
         </div>
       </div>

@@ -50,11 +50,12 @@ class Pages extends CI_Controller {
       $this->load->view('templates/footer');
     }
     else{
+      $data['tags']=$this->report_model->get_tags();
       $temp = $this->report_model->get_stories($title);
       if(count($temp)==1){
       $data['story']=$temp[0];
       $this->load->view('templates/header');
-      $this->load->view('static/single-story',$data);
+      $this->load->view('static/single_story',$data);
       $this->load->view('templates/footer');
     }
     else {
