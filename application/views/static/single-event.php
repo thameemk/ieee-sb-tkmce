@@ -1,7 +1,7 @@
 
     <section class="blog_area single-post-area section_gap">
         <div class="container">
-          <h2 class="text-center mb-5 head-font"><?=$event['event_title']?></h2>
+          <h2 class="text-center mb-5 mt-5 head-font"><?=$event['event_title']?></h2>
 
             <div class="row">
                 <div class="col-lg-8 posts-list">
