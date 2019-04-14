@@ -5,6 +5,12 @@ class Report_model extends CI_Model {
         $this->load->database();
     }
 
+      public function pop_tags(){
+        $this->db->select('story_date,story_title,link,story_image_link');
+        $query = $this->db->get('ieee_story');
+        return $query->result_array();
+
+      }
       public function get_stories($title=""){
           $this->db->select('story_date,story_title,story_content,link');
           if($title!=""){

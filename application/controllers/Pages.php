@@ -51,6 +51,10 @@ class Pages extends CI_Controller {
     }
     else{
       $data['tags']=$this->report_model->get_tags();
+      $data['pop_tags']=$this->report_model->pop_tags();
+
+      // $data['stories']=$this->report_model->get_stories();
+
       $temp = $this->report_model->get_stories($title);
       if(count($temp)==1){
       $data['story']=$temp[0];

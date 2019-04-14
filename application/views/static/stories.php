@@ -20,7 +20,7 @@
           <h4 class="mt-3 " style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;"><?=$row['story_title'] ?></h4>
           <p style="text-align:justify;"><?=$row['story_content'] ?></p>
           <br>
-          <!-- <a href="<?php echo base_url("stories/".$row['link'])?>"> -->
+        
           <button type="submit"  class="btn btn-primary" onclick="window.location='<?php echo base_url("stories/".$row['link'])?>'">Readmore</botton></a>
         </div>
       </div>

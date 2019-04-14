@@ -9,21 +9,20 @@
                 <div class="col-lg-8 posts-list">
                     <div class="single-post row">
                         <div class="col-lg-12">
+                          <?php  if ($story['story_image_link']!=NULL){?>
+
                             <div class="feature-img">
                                 <img class="img-fluid" src="<?php echo base_url();?>assets/upload/<?=$story['story_image_link']?>" alt="">
                             </div>
+                          <?php } ?>
                         </div>
                         <div class="col-lg-3  col-md-3">
                             <div class="blog_info text-right">
-                                <div class="post_tag">
-                                  <!-- <?=$story['tags']?> -->
-                                  <a href="<?=base_url()?>home">IEEE SB TKMCE</a>
-
-
-                                </div>
+                                <!-- <div class="post_tag">                       -->
+                                <!-- </div> -->
                                 <ul class="blog_meta list">
 
-                                    <li><b><?=$story['story_date']?></b><i class="lnr lnr-calendar-full"></i></li>
+                                    <li><i class="lnr lnr-calendar-full mr-2"></i><b><?=$story['story_date']?></b></li>
                                 </ul>
                                 <ul class="social-links">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -43,11 +42,16 @@
                         <div class="col-lg-12">
                             <div class="row">
                                 <div class="col-6">
+                                  <?php  if ($story['story_image_link_2']!=NULL){?>
                                     <img class="img-fluid" src="<?php echo base_url();?>assets/upload/<?=$story['story_image_link_2']?>" alt="">
+                                  <?php } ?>
                                 </div>
+                                <?php  if ($story['story_image_link_3']!=NULL){?>
+
                                 <div class="col-6">
                                     <img class="img-fluid" src="<?php echo base_url();?>assets/upload/<?=$story['story_image_link_3']?>" alt="">
                                 </div>
+                              <?php } ?>
 
                             </div>
                         </div>
@@ -71,34 +75,22 @@
                         </aside>
                         <aside class="single_sidebar_widget popular_post_widget">
                             <h3 class="widget_title">Popular Posts</h3>
+                            <?php
+                            $i=0;
+                            foreach($pop_tags as $row){
+                              if($i==4) break;
+                              $i++;
+                            ?>
+
                             <div class="media post_item">
-                                <img src="<?=base_url();?>/Front/img/blog/popular-post/post1.jpg" alt="post">
+                                <img height="60px" width="100px"  src="<?php echo base_url();?>assets/upload/<?=$row['story_image_link']?>" alt="post">
                                 <div class="media-body">
-                                    <a href="blog-details.html"><h3>Space The Final Frontier</h3></a>
-                                    <p>02 Hours ago</p>
+                                    <a href="<?php echo base_url("stories/".$row['link'])?>"><h3 class="head-font"><?=$row['story_title'] ?></h3></a>
+                                    <p><?=$row['story_date']?></p>
                                 </div>
                             </div>
-                            <div class="media post_item">
-                                <img src="<?=base_url();?>/Front/img/blog/popular-post/post2.jpg" alt="post">
-                                <div class="media-body">
-                                    <a href="blog-details.html"><h3>The Amazing Hubble</h3></a>
-                                    <p>02 Hours ago</p>
-                                </div>
-                            </div>
-                            <div class="media post_item">
-                                <img src="<?=base_url();?>/Front/img/blog/popular-post/post3.jpg" alt="post">
-                                <div class="media-body">
-                                    <a href="blog-details.html"><h3>Astronomy Or Astrology</h3></a>
-                                    <p>03 Hours ago</p>
-                                </div>
-                            </div>
-                            <div class="media post_item">
-                                <img src="<?=base_url();?>/Front/img/blog/popular-post/post4.jpg" alt="post">
-                                <div class="media-body">
-                                    <a href="blog-details.html"><h3>Asteroids telescope</h3></a>
-                                    <p>01 Hours ago</p>
-                                </div>
-                            </div>
+                          <?php } ?>
+
                             <div class="br"></div>
                         </aside>
 
