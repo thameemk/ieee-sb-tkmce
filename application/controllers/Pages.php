@@ -20,6 +20,8 @@ class Pages extends CI_Controller {
     else{
       $temp = $this->report_model->upcoming_events($title);
       if(count($temp)==1){
+        $data['tags']=$this->report_model->get_tags();
+        $data['pop_tags']=$this->report_model->pop_tags();
       $data['event']=$temp[0];
       $this->load->view('templates/header');
       $this->load->view('static/single-event',$data);

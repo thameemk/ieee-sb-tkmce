@@ -23,7 +23,7 @@ class Report_model extends CI_Model {
       public function upcoming_events($title=""){
           $this->db->select('event_title,short_content,event_date,link');
           if($title!=""){
-            $this->db->select('full_content,img_lnk');
+            $this->db->select('full_content,img_lnk,img_link_2,img_link_3');
             $this->db->where('link',$title);
           }
           $query = $this->db->get('upcoming_events');
