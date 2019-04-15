@@ -14,7 +14,7 @@ class Report_model extends CI_Model {
       public function get_stories($title=""){
           $this->db->select('story_date,story_title,story_content,link');
           if($title!=""){
-            $this->db->select('full_content,story_image_link,story_image_link_2,story_image_link_3,tags');
+            $this->db->select('full_content,story_image_link,story_image_link_2,story_image_link_3,tags1');
             $this->db->where('link',$title);
           }
           $query = $this->db->get('ieee_story');
@@ -83,6 +83,18 @@ class Report_model extends CI_Model {
        }
        $query = $this->db->get('tags');
        return $query->result_array();
+     }
+     public function get_stags($tag=""){
+       $this->db->select('tags1,story_title');
+       if($tag!=""){
+
+       $this->db->select('story_title');
+       $this->db->where('tags1',$tag);
+     }
+       $query = $this->db->get('ieee_story');
+       return $query->result_array();
+
+
      }
      public function subscribe($data){
        $this->db->insert('subscribtions', $data);

@@ -102,8 +102,9 @@ class Pages extends CI_Controller {
         $this->load->view('static/tags',$data);
         $this->load->view('templates/footer');
       }
-      else{
+      else {
         $data['tags']=$this->report_model->get_tags();
+        $data['stags']=$this->report_model->get_stags();
         $temp = $this->report_model->get_tags($title);
         if(count($temp)==1){
         $data['tag']=$temp[0];
