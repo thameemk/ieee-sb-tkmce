@@ -70,7 +70,7 @@
                               <?php
                               foreach($tags as $row){
                               ?>
-                                <li><a href="<? echo base_url();?>tags/<?=$row['link'] ?>"><?=$row['tag'] ?></a></li>
+                                <li><a href="<?php echo base_url("tags/".$row['link'])?>"><?=$row['tag'] ?></a></li>
                               <?php } ?>
 
                             </ul>
