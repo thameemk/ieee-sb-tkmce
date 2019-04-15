@@ -9,6 +9,10 @@ $route['home/(.+)'] = 'pages/home/$1';
 $route['stories'] = 'pages/stories';
 $route['stories/(.+)'] = 'pages/stories/$1';
 
+$route['tags'] = 'pages/tags';
+$route['tags/(.+)'] = 'pages/tags/$1';
+
+
 $route['execom'] = 'pages/execom';
 $route['admin_login'] = 'Login/index';
 

@@ -1,11 +1,11 @@
-<!--================ Start Features Area =================-->
-<section class="features_area">
+
+<section class="features_area ">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
-        <div class="main_title">
-          <h2 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">Latest Stories</h2>
-
+        <div class="main_title" style="margin-top:100px;margin-bottom:50px;">
+          <h2 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;"> Stories</h2>
+          <h4 style="color:red;"> </h4>
         </div>
       </div>
     </div>
@@ -20,7 +20,7 @@
           <h4 class="mt-3 " style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;"><?=$row['story_title'] ?></h4>
           <p style="text-align:justify;"><?=$row['story_content'] ?></p>
           <br>
-        
+
           <button type="submit"  class="btn btn-primary" onclick="window.location='<?php echo base_url("stories/".$row['link'])?>'">Readmore</botton></a>
         </div>
       </div>
@@ -29,4 +29,3 @@
     </div>
   </div>
 </section>
-<!--================ End Features Area =================-->

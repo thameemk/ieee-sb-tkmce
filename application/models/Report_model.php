@@ -75,10 +75,18 @@ class Report_model extends CI_Model {
      public function form($data){
        $this->db->insert('ieee_story', $data);
      }
-     public function get_tags(){
-       $this->db->select('tag');
+     public function get_tags($title=""){
+       $this->db->select('tag,link');
+       if($title!=""){
+         $this->db->select('tag');
+         $this->db->where('link',$title);
+       }
        $query = $this->db->get('tags');
        return $query->result_array();
+     }
+     public function subscribe($data){
+       $this->db->insert('subscribtions', $data);
+
      }
 
 }

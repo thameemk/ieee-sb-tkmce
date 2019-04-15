@@ -18,18 +18,20 @@
                         </div>
                         <div class="col-lg-3  col-md-3">
                             <div class="blog_info text-right">
-                                <!-- <div class="post_tag">                       -->
-                                <!-- </div> -->
+                                <div class="post_tag">
+
+                                  <!-- <a href="<?php echo base_url();?>home">IEEE SB TKMCE</a>                       -->
+                                </div>
                                 <ul class="blog_meta list">
 
                                     <li><i class="lnr lnr-calendar-full mr-2"></i><b><?=$story['story_date']?></b></li>
                                 </ul>
-                                <ul class="social-links">
+                                <!-- <ul class="social-links">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fa fa-github"></i></a></li>
                                     <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-9 blog_details quotes">
@@ -68,7 +70,7 @@
                               <?php
                               foreach($tags as $row){
                               ?>
-                                <li><a href="#"><?=$row['tag'] ?></a></li>
+                                <li><a href="<? echo base_url();?>tags/<?=$row['link'] ?>"><?=$row['tag'] ?></a></li>
                               <?php } ?>
 
                             </ul>
@@ -98,19 +100,24 @@
                         <aside class="single-sidebar-widget newsletter_widget">
                             <h4 class="widget_title">Newsletter</h4>
                             <p>
-                            Here, I focus on a range of items and features that we use in life without
-                            giving them a second thought.
+                          Subscribe to our newsletter to get the most exclusive and latest updates on our  upcoming events
+
                             </p>
+
+
+                            <form action="<?=base_url("Pages/news_letter")?>" method="post">
+
                             <div class="form-group d-flex flex-row">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></div>
                                     </div>
-                                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'">
+                                    <input type="email" class="form-control" id="inlineFormInputGroup" name="email" placeholder="Enter email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'">
                                 </div>
-                                <a href="#" class="bbtns">Subcribe</a>
+                                <button type="submit" class="bbtns">Subcribe</button>
                             </div>
-                            <p class="text-bottom">You can unsubscribe at any time</p>
+                          </form>
+                            <!-- <p class="text-bottom">You can unsubscribe at any time</p> -->
                             <div class="br"></div>
                         </aside>
 
