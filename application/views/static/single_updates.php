@@ -1,16 +1,16 @@
 
     <section class="blog_area single-post-area section_gap">
         <div class="container">
-          <h2 class="text-center mb-5 mt-5 head-font"><?=$event['event_title']?></h2>
+          <h2 class="text-center mb-5 mt-5 head-font"><?=$update['event_title']?></h2>
 
             <div class="row">
                 <div class="col-lg-8 posts-list">
                     <div class="single-post row">
                         <div class="col-lg-12">
-                          <?php  if ($event['img_link_1']!=NULL){?>
+                          <?php  if ($update['img_link_1']!=NULL){?>
 
                             <div class="feature-img">
-                                <img class="img-fluid" src="<?php echo base_url();?>assets/upload/upcoming/<?=$event['img_link_1']?>" alt="">
+                                <img class="img-fluid" src="<?php echo base_url();?>assets/upload/upcoming/<?=$update['img_link_1']?>" alt="">
                             </div>
                           <?php } ?>
                         </div>
@@ -20,9 +20,9 @@
                                 <!-- </div> -->
                                 <ul class="blog_meta list">
 
-                                    <li><i class="lnr lnr-calendar-full mr-2"></i><b><?=$event['event_date']?></b></li>
-                                    <li><i class="lnr lnr-location"><b style="color:black;font-size:.8em;"></i><?=$event['venue']?></b></li>
-                                    <li><i class="lnr lnr-tag"><b style="color:black;font-size:.7em;"></i><?=$event['category']?></b></li>
+                                    <li><i class="lnr lnr-calendar-full mr-2"></i><b><?=$update['event_date']?></b></li>
+                                    <li><i class="lnr lnr-location"><b style="color:black;font-size:.8em;"></i><?=$update['venue']?></b></li>
+                                    <li><i class="lnr lnr-tag"><b style="color:black;font-size:.7em;"></i><?=$update['category']?></b></li>
                                 </ul>
 
                             </div>
@@ -30,21 +30,21 @@
                         <div class="col-lg-9 col-md-9 blog_details quotes">
 
                             <p class="excert text-justify ">
-                            <?=$event['full_content']?>
+                            <?=$update['full_content']?>
                             </p>
 
                         </div>
                         <div class="col-lg-12">
                             <div class="row">
                                 <div class="col-6">
-                                  <?php  if ($event['img_link_2']!=NULL){?>
-                                    <img class="img-fluid" src="<?php echo base_url();?>assets/upload/upcoming/<?=$event['img_lnk_2']?>" alt="">
+                                  <?php  if ($update['img_link_2']!=NULL){?>
+                                    <img class="img-fluid" src="<?php echo base_url();?>assets/upload/upcoming/<?=$update['img_lnk_2']?>" alt="">
                                   <?php } ?>
                                 </div>
-                                <?php  if ($event['img_link_3']!=NULL){?>
+                                <?php  if ($update['img_link_3']!=NULL){?>
 
                                 <div class="col-6">
-                                    <img class="img-fluid" src="<?php echo base_url();?>assets/upload/upcoming/<?=$event['img_lnk_3']?>" alt="">
+                                    <img class="img-fluid" src="<?php echo base_url();?>assets/upload/upcoming/<?=$update['img_lnk_3']?>" alt="">
                                 </div>
                               <?php } ?>
 
@@ -57,17 +57,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="blog_right_sidebar">
-                        <aside class="single-sidebar-widget tag_cloud_widget">
-                            <h4 class="widget_title">Tag Clouds</h4>
-                            <ul class="list">
-                              <?php
-                              foreach($tags as $row){
-                              ?>
-                                <li><a href="#"><?=$row['tag'] ?></a></li>
-                              <?php } ?>
-
-                            </ul>
-                        </aside>
+                      
                         <aside class="single_sidebar_widget popular_post_widget">
                             <h3 class="widget_title">Latest Posts</h3>
                             <?php

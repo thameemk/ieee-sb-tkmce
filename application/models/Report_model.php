@@ -20,13 +20,13 @@ class Report_model extends CI_Model {
           $query = $this->db->get('ieee_story');
           return $query->result_array();
       }
-      public function upcoming_events($title=""){
+      public function updates($title=""){
           $this->db->select('event_title,short_content,event_date,link');
           if($title!=""){
             $this->db->select('full_content,img_link_1,img_link_2,img_link_3,img_link_4,img_link_5,venue,category');
             $this->db->where('link',$title);
           }
-          $query = $this->db->get('upcoming_events');
+          $query = $this->db->get('updates');
           return $query->result_array();
       }
 
@@ -73,7 +73,7 @@ class Report_model extends CI_Model {
      }
 
      public function form($data){
-       $this->db->insert('upcoming_events', $data);
+       $this->db->insert('updates', $data);
      }
      public function get_tags($title=""){
        $this->db->select('tag,link');

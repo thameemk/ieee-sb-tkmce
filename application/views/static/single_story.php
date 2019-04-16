@@ -29,12 +29,7 @@
                                     <li><i class="lnr lnr-tag"><b style="color:black;font-size:.7em;"></i><?=$story['category']?></b></li>
 
                                 </ul>
-                                <!-- <ul class="social-links">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-github"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                </ul> -->
+
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-9 blog_details quotes">
@@ -81,17 +76,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="blog_right_sidebar">
-                        <aside class="single-sidebar-widget tag_cloud_widget">
-                            <h4 class="widget_title">Tag Clouds</h4>
-                            <ul class="list">
-                              <?php
-                              foreach($tags as $row){
-                              ?>
-                                <li><a href="<?php echo base_url("tags/".$row['link'])?>"><?=$row['tag'] ?></a></li>
-                              <?php } ?>
-
-                            </ul>
-                        </aside>
+                        
                         <aside class="single_sidebar_widget popular_post_widget">
                             <h3 class="widget_title">Latest Posts</h3>
                             <?php

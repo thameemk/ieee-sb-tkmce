@@ -9,8 +9,8 @@ $route['home'] = 'pages/index';
 $route['stories'] = 'pages/stories';
 $route['stories/(.+)'] = 'pages/stories/$1';
 
-$route['events'] = 'pages/upcoming_events';
-$route['events/(.+)'] = 'pages/upcoming_events/$1';
+$route['updates'] = 'pages/updates';
+$route['updates/(.+)'] = 'pages/updates/$1';
 
 $route['tags'] = 'pages/tags';
 $route['tags/(.+)'] = 'pages/tags/$1';

@@ -14,7 +14,8 @@ class Admin extends CI_Controller {
     }
     public function home()
     {
-        $this->load->view('templates/header');
+        $data['page_title'] = 'cPanel';
+        $this->load->view('templates/header',$data);
         $this->load->view('admin_home');
         $this->load->view('templates/footer');
     }

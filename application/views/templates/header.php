@@ -4,8 +4,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Official website of IEEE Student Branch, TKM College of Engineering.">
+	<meta name="keywords" content="IEEE,IEEE SB TKMCE,IEEEorg,IEEER10,TKMCE,TKM College of engineering,IEEE Kerala,">
 	<link rel="icon" href="<?=base_url();?>/assets/front/img/logo_title.png" type="image/png">
-	<title>IEEE SB TKMCE</title>
+	<title><?php echo $page_title; ?> | IEEE SB TKMCE</title>
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/css/bootstrap.css">
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/vendors/linericon/style.css">
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/css/font-awesome.min.css">
@@ -42,6 +44,7 @@
 							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>home">Home</a></li>
 							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>about">About</a></li>
 							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>stories">Stories</a></li>
+							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>updates">Updates</a></li>
 							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>contact">Contact</a></li>
 							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>team">Our Team</a></li>
 							<?php if ($this->session->userdata('user_email') == TRUE) {?>

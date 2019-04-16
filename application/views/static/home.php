@@ -25,12 +25,12 @@
 </div>
 </section>
 
-<section class="features_area ">
+<section class="features_area pt-2 ">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
-        <div class="main_title" style="margin-top:100px;margin-bottom:50px;">
-          <h2 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">Upcoming Events</h2>
+        <div class="main_title" style="margin-top:50px;margin-bottom:25px;">
+          <h2 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">Updates</h2>
           <h4 style="color:red;"> </h4>
         </div>
       </div>
@@ -50,7 +50,7 @@
           <p style="text-align:justify;"><?=$row['short_content'] ?></p>
           <br>
 
-          <button type="submit"  class="btn btn-primary" onclick="window.location='<?php echo base_url("events/".$row['link'])?>'">Readmore</botton></a>
+          <button type="submit"  class="btn btn-primary" onclick="window.location='<?php echo base_url("updates/".$row['link'])?>'">Readmore</botton></a>
         </div>
       </div>
 <?php } ?>
@@ -96,7 +96,7 @@
   </div>
 </section>
 
-<section class="mb-5 mt-5 ">
+<section class="mb-5 pt-2">
   <div class="container">
     <div class="main_title">
       <h2 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">SOCIETIES</h2>
@@ -121,7 +121,7 @@
   </div>
 </section>
 
-<section class="sample-text-area">
+<section class="sample-text-area pt-2">
   <div class="container">
     <div class="main_title">
       <h2 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">Join ieee</h2>

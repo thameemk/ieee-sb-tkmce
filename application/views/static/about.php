@@ -1,23 +1,11 @@
-<!--================ Start Banner Area =================-->
-<section class="banner_area">
-  <div class="banner_inner d-flex align-items-center">
-    <div class="container">
-      <div class="banner_content text-center">
-        <h2>About</h2>
-        <div class="page_link">
-          <a href="<?=base_url()?>home">Home</a>
-          <a href="<?=base_url()?>about">About</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--================ End Banner Area =================-->
 
+<section style="padding-top:100px;">
 
-<!-- Start Align Area -->
 <div class="whole-wrap">
-  <div class="container">
+
+  <div class="container pt-5">
+    <h2 class="head-font text-center">About Us</h2>
+
     <div class="section-top-border">
       <h3 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;" class="mb-30 title_color"> TKM College of Engineering</h3>
       <div class="row">
@@ -78,3 +66,4 @@
     </div>
   </div>
 </div>
+</section>

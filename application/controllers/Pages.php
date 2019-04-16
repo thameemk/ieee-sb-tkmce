@@ -8,19 +8,16 @@ class Pages extends CI_Controller {
       $this->load->model('report_model');
     }
 
-  function index($title=""){
+  function index(){
 
-      if($title==""){
+      $data['page_title'] = 'Home';
       $data['stories']=$this->report_model->get_stories();
       $data['chapters']=$this->report_model->chapters();
-      $data['events']=$this->report_model->upcoming_events();
-      $this->load->view('templates/header');
+      $data['events']=$this->report_model->updates();
+      $this->load->view('templates/header',$data);
       $this->load->view('static/home',$data);
       $this->load->view('templates/footer');
-    }
-    else {
-      {show_404();}
-    }
+
     }
 
 
@@ -29,7 +26,8 @@ class Pages extends CI_Controller {
       if ( ! file_exists(APPPATH.'views/static/'.$page.'.php')){
           show_404();
       }
-      $this->load->view('templates/header');
+      $data['page_title'] = $page;
+      $this->load->view('templates/header',$data);
       $this->load->view('static/'.$page);
       $this->load->view('templates/footer');
 
@@ -38,8 +36,9 @@ class Pages extends CI_Controller {
   function stories($title=""){
 
       if($title==""){
+      $data['page_title'] = 'Stories';
       $data['stories']=$this->report_model->get_stories();
-      $this->load->view('templates/header');
+      $this->load->view('templates/header',$data);
       $this->load->view('static/stories',$data);
       $this->load->view('templates/footer');
     }
@@ -48,11 +47,11 @@ class Pages extends CI_Controller {
       $data['pop_tags']=$this->report_model->pop_tags();
 
       // $data['stories']=$this->report_model->get_stories();
-
+      $data['page_title'] = $title;
       $temp = $this->report_model->get_stories($title);
       if(count($temp)==1){
       $data['story']=$temp[0];
-      $this->load->view('templates/header');
+      $this->load->view('templates/header',$data);
       $this->load->view('static/single_story',$data);
       $this->load->view('templates/footer');
     }
@@ -61,25 +60,28 @@ class Pages extends CI_Controller {
     }
     }
   }
-  function upcoming_events($title=""){
+  function updates($title=""){
 
       if($title==""){
-      $data['events']=$this->report_model->upcoming_events();
-      $this->load->view('templates/header');
-      $this->load->view('static/events',$data);
+        $data['page_title'] = 'Updates';
+      $data['updates']=$this->report_model->updates();
+      $this->load->view('templates/header',$data);
+      $this->load->view('static/updates',$data);
       $this->load->view('templates/footer');
     }
     else{
+
       $data['tags']=$this->report_model->get_tags();
       $data['pop_tags']=$this->report_model->pop_tags();
 
-      $data['events']=$this->report_model->upcoming_events();
+      $data['updates']=$this->report_model->updates();
+      $data['page_title'] = $title;
 
-      $temp = $this->report_model->upcoming_events($title);
+      $temp = $this->report_model->updates($title);
       if(count($temp)==1){
-      $data['event']=$temp[0];
-      $this->load->view('templates/header');
-      $this->load->view('static/single-event',$data);
+      $data['update']=$temp[0];
+      $this->load->view('templates/header',$data);
+      $this->load->view('static/single_updates',$data);
       $this->load->view('templates/footer');
     }
     else {
@@ -89,8 +91,9 @@ class Pages extends CI_Controller {
   }
 
   function team(){
+    $data['page_title'] = 'Our Team';
     $data['team']=$this->report_model->get_team();
-    $this->load->view('templates/header');
+    $this->load->view('templates/header',$data);
     $this->load->view('static/team',$data);
     $this->load->view('templates/footer');
   }
@@ -105,34 +108,7 @@ class Pages extends CI_Controller {
     $data['stories']=$this->report_model->get_stories();
     $data['stories']="Successfully Subscribed";
     redirect('stories');
-
-
-    echo "flag1";
-
   }
 
-    function tags($title=""){
-
-        if($title==""){
-        $data['tags']=$this->report_model->get_tags();
-        $this->load->view('templates/header');
-        $this->load->view('static/tags',$data);
-        $this->load->view('templates/footer');
-      }
-      else {
-        $data['tags']=$this->report_model->get_tags();
-        $data['stags']=$this->report_model->get_stags();
-        $temp = $this->report_model->get_tags($title);
-        if(count($temp)==1){
-        $data['tag']=$temp[0];
-        $this->load->view('templates/header');
-        $this->load->view('static/tags_single',$data);
-        $this->load->view('templates/footer');
-      }
-      else {
-        {show_404();}
-      }
-      }
-    }
 
 }

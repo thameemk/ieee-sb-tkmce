@@ -11,7 +11,7 @@
     </div>
     <div class="row feature_inner">
       <?php
-      foreach($events as $row){
+      foreach($updates as $row){
       ?>
       <div class="col-lg-4 col-md-6">
         <div class="feature_item"style="box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
@@ -21,7 +21,7 @@
           <p style="text-align:justify;"><?=$row['short_content'] ?></p>
           <br>
 
-          <button type="submit"  class="btn btn-primary" onclick="window.location='<?php echo base_url("events/".$row['link'])?>'">Readmore</botton></a>
+          <button type="submit"  class="btn btn-primary" onclick="window.location='<?php echo base_url("updates/".$row['link'])?>'">Readmore</botton></a>
         </div>
       </div>
 <?php } ?>
