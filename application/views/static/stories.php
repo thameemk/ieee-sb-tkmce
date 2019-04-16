@@ -4,8 +4,12 @@
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
         <div class="main_title" style="margin-top:100px;margin-bottom:50px;">
-          <h2 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;"> Stories</h2>
-          <h4 style="color:red;"> </h4>
+          <h2 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;"> Stories
+          					</h2>
+                      	<?php if($this->session->flashdata('msg')): ?>
+          <h4 class="head-font" style="color:red;"><?php echo $this->session->flashdata('msg'); ?> </h4>
+        <?php endif; ?>
+
         </div>
       </div>
     </div>
@@ -27,5 +31,6 @@
 <?php } ?>
 
     </div>
+
   </div>
 </section>

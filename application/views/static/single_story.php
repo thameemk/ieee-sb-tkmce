@@ -76,7 +76,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="blog_right_sidebar">
-                        
+
                         <aside class="single_sidebar_widget popular_post_widget">
                             <h3 class="widget_title">Latest Posts</h3>
                             <?php
@@ -114,7 +114,7 @@
                                     <div class="input-group-prepend">
                                         <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></div>
                                     </div>
-                                    <input type="email" class="form-control" id="inlineFormInputGroup" name="email" placeholder="Enter email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'">
+                                    <input type="email" class="form-control"  name="email" placeholder="Enter email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'">
                                 </div>
                                 <button type="submit" class="bbtns">Subcribe</button>
                             </div>
