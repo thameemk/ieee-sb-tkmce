@@ -34,7 +34,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light" style="background:#FFFFFF;">
 				<div class="container">
 					<a class="navbar-brand logo_h" href="<?=base_url()?>home"><img src="<?=base_url();?>/assets/front/img/ieee_1.gif"  alt=""></a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background:#00629B;">
+					<button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background:#FFFFFF;">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
