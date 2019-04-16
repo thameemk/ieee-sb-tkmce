@@ -12,6 +12,7 @@ class Pages extends CI_Controller {
 
       $data['page_title'] = 'Home';
       $data['stories']=$this->report_model->get_stories();
+      $data['awards']=$this->report_model->awards();
       $data['chapters']=$this->report_model->chapters();
       $data['events']=$this->report_model->updates();
       $this->load->view('templates/header',$data);

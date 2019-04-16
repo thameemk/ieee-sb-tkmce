@@ -100,5 +100,10 @@ class Report_model extends CI_Model {
        $this->db->insert('subscribtions', $data);
 
      }
+     public function awards(){
+       $this->db->select('award_details,award_title,images');
+        $query = $this->db->get('awards');
+        return $query->result_array();
+     }
 
 }

@@ -60,6 +60,39 @@
 
   </div>
 </section>
+<section>
+  <div class="testimonial_area section_gap_bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div >
+                        <h2 class="head-font">AWARDS AND ACHIEVEMENTS</h2>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="testi_slider owl-carousel">
+                  <?php foreach($awards as $row){ ?>
+                    <div class="testi_item">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img height="130px" width="130px" src="<?php echo base_url();?>assets/upload/awards/<?=$row['images']?>">
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="testi_text">
+                                    <h4 class="head-font"><?=$row['award_title']?> </h4>
+                                    <p class="text-justify"><?=$row['award_details']?> </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  <?php }?>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="features_area ">
   <div class="container">
