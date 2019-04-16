@@ -7,10 +7,10 @@
                 <div class="col-lg-8 posts-list">
                     <div class="single-post row">
                         <div class="col-lg-12">
-                          <?php  if ($event['img_lnk']!=NULL){?>
+                          <?php  if ($event['img_link_1']!=NULL){?>
 
                             <div class="feature-img">
-                                <img class="img-fluid" src="<?php echo base_url();?>assets/upload/upcoming/<?=$event['img_lnk']?>" alt="">
+                                <img class="img-fluid" src="<?php echo base_url();?>assets/upload/upcoming/<?=$event['img_link_1']?>" alt="">
                             </div>
                           <?php } ?>
                         </div>
@@ -21,13 +21,10 @@
                                 <ul class="blog_meta list">
 
                                     <li><i class="lnr lnr-calendar-full mr-2"></i><b><?=$event['event_date']?></b></li>
+                                    <li><i class="lnr lnr-location"><b style="color:black;font-size:.8em;"></i><?=$event['venue']?></b></li>
+                                    <li><i class="lnr lnr-tag"><b style="color:black;font-size:.7em;"></i><?=$event['category']?></b></li>
                                 </ul>
-                                <ul class="social-links">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-github"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                </ul>
+
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-9 blog_details quotes">

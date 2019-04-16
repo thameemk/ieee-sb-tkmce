@@ -25,13 +25,13 @@ class Admin extends CI_Controller {
       $temp = $this->input->post('title');
       $link = preg_replace('/\s+/', '-', $temp);
       $data = array(
-        'story_title' => $this->input->post('title'),
-        'story_date' => $this->input->post('date'),
-        'story_content' => $this->input->post('smessage'),
+        'event_title' => $this->input->post('title'),
+        'event_date' => $this->input->post('date'),
+        'short_content' => $this->input->post('smessage'),
         'full_content' => $this->input->post('lmessage'),
         'venue' => $this->input->post('venue'),
         'category' => $this->input->post('category'),
-        'attendice' => $this->input->post('attendice'),
+        // 'attendice' => $this->input->post('attendice'),
 
 
       );

@@ -15,7 +15,7 @@
                                     <input name="title" placeholder=" Title" onfocus="this.placeholder = 'Title'" onblur="this.placeholder = ' Title'" class="form-control mt-20" required="" type="text">
                                 </div>
 																<div class="col-lg-6 d-flex flex-column mb-3">
-																	<h5 class="font-head">Date of Event:</h5>
+																	<h5 class="head-font">Date of Event:</h5>
                                     <input name="date" placeholder=" Title" onfocus="this.placeholder = 'Date'" onblur="this.placeholder = ' Date'" class="form-control mt-20" required="" type="date">
                                 </div>
 																<div class="col-lg-6 d-flex flex-column mb-3">
@@ -28,10 +28,10 @@
 
                                     <input name="category" placeholder=" Category" onfocus="this.placeholder = 'Category'" onblur="this.placeholder = ' Category'" class="form-control mt-20"  type="text">
                                 </div>
-																<div class="col-lg-6 d-flex flex-column mb-3">
+																<!-- <div class="col-lg-6 d-flex flex-column mb-3">
 
                                     <input name="attendice" placeholder=" Attendice" onfocus="this.placeholder = 'Attendice'" onblur="this.placeholder = ' Attendice'" class="form-control mt-20"  type="text">
-                                </div>
+                                </div> -->
 																<!-- <div class="col-lg-6 d-flex flex-column mb-3">
 																	<h5>Upload Image:</h5>
 																		<input name="image" placeholder=" Upload Image" onfocus="this.placeholder = 'Upload Image'" onblur="this.placeholder = ' Upload Image'" class="mt-20" style="height:40px;" required="" type="file">
