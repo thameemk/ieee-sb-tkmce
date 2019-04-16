@@ -11,6 +11,7 @@ class Pages extends CI_Controller {
   function home($title=""){
 
       if($title==""){
+      $data['stories']=$this->report_model->get_stories();
       $data['chapters']=$this->report_model->chapters();
       $data['events']=$this->report_model->upcoming_events();
       $this->load->view('templates/header');
@@ -71,10 +72,10 @@ class Pages extends CI_Controller {
     }
   }
 
-  function execom(){
-    $data['execom']=$this->report_model->get_execom();
+  function team(){
+    $data['team']=$this->report_model->get_team();
     $this->load->view('templates/header');
-    $this->load->view('static/execom',$data);
+    $this->load->view('static/team',$data);
     $this->load->view('templates/footer');
   }
   function news_letter(){

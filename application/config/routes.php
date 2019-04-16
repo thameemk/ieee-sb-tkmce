@@ -13,7 +13,7 @@ $route['tags'] = 'pages/tags';
 $route['tags/(.+)'] = 'pages/tags/$1';
 
 
-$route['execom'] = 'pages/execom';
+$route['team'] = 'pages/team';
 $route['admin_login'] = 'Login/index';
 
 

@@ -14,7 +14,7 @@ class Report_model extends CI_Model {
       public function get_stories($title=""){
           $this->db->select('story_date,story_title,story_content,link');
           if($title!=""){
-            $this->db->select('full_content,story_image_link,story_image_link_2,story_image_link_3,tags1');
+            $this->db->select('full_content,story_image_link,story_image_link_2,story_image_link_3,story_image_link_4,story_image_link_5,tags1,venue,category');
             $this->db->where('link',$title);
           }
           $query = $this->db->get('ieee_story');
@@ -36,8 +36,8 @@ class Report_model extends CI_Model {
         return $query->result_array();
       }
 
-      public function get_execom(){
-        $this->db->select('id,name,position,contact,image');
+      public function get_team(){
+        $this->db->select('id,name,position,email,branch,status');
         $query = $this->db->get('execom2019');
         return $query->result_array();
       }

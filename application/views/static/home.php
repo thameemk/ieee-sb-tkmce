@@ -2,16 +2,16 @@
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" style="max-height: 100vh;" src="<?=base_url();?>/assets/front/img/1.jpg" alt="First slide">
+      <img class="d-block w-100" style="max-height: 100vh;" src="<?=base_url();?>/assets/upload/lp2.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" style="max-height: 100vh;" src="<?=base_url();?>/assets/front/img/2.jpg" alt="Second slide">
+      <img class="d-block w-100" style="max-height: 100vh;" src="<?=base_url();?>/assets/upload/agm3.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" style="max-height: 100vh;" src="<?=base_url();?>/assets/front/img/3.jpg" alt="Third slide">
+      <img class="d-block w-100" style="max-height: 100vh;" src="<?=base_url();?>/assets/upload/ieee-day2.jpg" alt="Third slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" style="max-height: 100vh;" src="<?=base_url();?>/assets/front/img/4.jpg" alt="Fourth slide">
+      <img class="d-block w-100" style="max-height: 100vh;" src="<?=base_url();?>/assets/upload/evoke1.jpg" alt="Fourth slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" style="min-height: 100vh;" role="button" data-slide="prev">
@@ -24,6 +24,41 @@
   </a>
 </div>
 </section>
+
+<section class="features_area ">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <div class="main_title" style="margin-top:100px;margin-bottom:50px;">
+          <h2 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;"> Stories</h2>
+          <h4 style="color:red;"> </h4>
+        </div>
+      </div>
+    </div>
+    <div class="row feature_inner">
+      <?php
+      $i=0;
+      foreach($stories as $row){
+        if($i==3) break;
+        $i++;
+      ?>
+      <div class="col-lg-4 col-md-6">
+        <div class="feature_item"style="box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+        background: #fff;">
+          <p class="font-weight-bold"><?=$row['story_date']?></p>
+          <h4 class="mt-3 " style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;"><?=$row['story_title'] ?></h4>
+          <p style="text-align:justify;"><?=$row['story_content'] ?></p>
+          <br>
+
+          <button type="submit"  class="btn btn-primary" onclick="window.location='<?php echo base_url("stories/".$row['link'])?>'">Readmore</botton></a>
+        </div>
+      </div>
+<?php } ?>
+
+    </div>
+  </div>
+</section>
+
 <section class="mb-5 mt-5 ">
   <div class="container">
     <div class="main_title">
@@ -48,6 +83,7 @@
     </div>
   </div>
 </section>
+<?php if($events==""){?>
 <section class="features_area">
   <div class="container">
     <div class="row justify-content-center">
@@ -74,7 +110,8 @@
     </div>
   </div>
 </section>
-<!-- Start Sample Area -->
+<?php } ?>
+
 <section class="sample-text-area">
   <div class="container">
     <div class="main_title">

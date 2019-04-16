@@ -25,6 +25,9 @@
                                 <ul class="blog_meta list">
 
                                     <li><i class="lnr lnr-calendar-full mr-2"></i><b><?=$story['story_date']?></b></li>
+                                    <li><i class="lnr lnr-location"><b style="color:black;font-size:.8em;"></i><?=$story['venue']?></b></li>
+                                    <li><i class="lnr lnr-tag"><b style="color:black;font-size:.7em;"></i><?=$story['category']?></b></li>
+
                                 </ul>
                                 <!-- <ul class="social-links">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -54,7 +57,21 @@
                                     <img class="img-fluid" src="<?php echo base_url();?>assets/upload/<?=$story['story_image_link_3']?>" alt="">
                                 </div>
                               <?php } ?>
+                            </div>
+                            <div class="row mt-3">
 
+                              <?php  if ($story['story_image_link_4']!=NULL){?>
+
+                              <div class="col-6">
+                                  <img class="img-fluid" src="<?php echo base_url();?>assets/upload/<?=$story['story_image_link_4']?>" alt="">
+                              </div>
+                            <?php } ?>
+                            <?php  if ($story['story_image_link_5']!=NULL){?>
+
+                            <div class="col-6">
+                                <img class="img-fluid" src="<?php echo base_url();?>assets/upload/<?=$story['story_image_link_5']?>" alt="">
+                            </div>
+                          <?php } ?>
                             </div>
                         </div>
                     </div>
