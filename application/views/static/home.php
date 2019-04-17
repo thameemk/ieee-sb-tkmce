@@ -1,29 +1,44 @@
-<section class="h-75">
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" style="max-height: 100vh;" src="<?=base_url();?>/assets/upload/lp2.jpg" alt="First slide">
+
+<section>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active" style="background-image: url('<?=base_url();?>/assets/front/img/banner/1.png')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4 head-font text-white">Annual General Body Meeting 2019</h2>
+          <p class="lead"><a href="<?php echo base_url();?>stories/annual-general-body-meeting">Readmore</a></p>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('<?=base_url();?>/assets/front/img/banner/2.png')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4 head-font ">Evoke'19</h2>
+          <p class="lead"><a href="<?php echo base_url();?>stories/evoke19-the-green-summit">Readmore</a></p>
+          
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('<?=base_url();?>/assets/front/img/banner/4.png')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4 head-font">Distinguished Lecture Program Series</h2>
+          <p class="lead"><a href="<?php echo base_url();?>stories/distinguished-lecture-program-series">Readmore</a></p>
+         
+        </div>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" style="max-height: 100vh;" src="<?=base_url();?>/assets/upload/agm3.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" style="max-height: 100vh;" src="<?=base_url();?>/assets/upload/ieee-day2.jpg" alt="Third slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" style="max-height: 100vh;" src="<?=base_url();?>/assets/upload/evoke1.jpg" alt="Fourth slide">
-    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" style="min-height: 100vh;" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" style="min-height: 100vh;" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
 </section>
+
 
 <section class="features_area pt-2 ">
   <div class="container">

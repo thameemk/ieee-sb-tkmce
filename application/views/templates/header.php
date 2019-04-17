@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Official website of IEEE Student Branch, TKM College of Engineering.">
 	<meta name="keywords" content="IEEE,IEEE SB TKMCE,IEEEorg,IEEER10,TKMCE,TKM College of engineering,IEEE Kerala,">
-	<link rel="icon" href="<?=base_url();?>/assets/front/img/logo_title.png" type="image/png">
-	<title><?php echo $page_title; ?> | IEEE SB TKMCE</title>
+	<link rel="icon" href="<?=base_url();?>/assets/front/img/ieee_mb_blue.png" type="image/png">
+	<title><?php echo $page_title; ?> - IEEE SB TKMCE</title>
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/css/bootstrap.css">
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/vendors/linericon/style.css">
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/css/font-awesome.min.css">
@@ -16,11 +16,20 @@
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/vendors/nice-select/css/nice-select.css">
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/css/style.css">
 	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<style>
-	.myslides {display:none;}
+	
 	.head-font{
 		font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;
+	}
+	.carousel-item {
+		height: 100vh;
+		min-height: 350px;
+		background: no-repeat center center scroll;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 	}
 	</style>
 
@@ -46,7 +55,7 @@
 							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>stories">Stories</a></li>
 							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>updates">Updates</a></li>
 							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>contact">Contact</a></li>
-							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>team">Our Team</a></li>
+							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>team">Team</a></li>
 							<?php if ($this->session->userdata('user_email') == TRUE) {?>
 								<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>Login/logout">Logout</a></li>
 							<?php } else { ?>

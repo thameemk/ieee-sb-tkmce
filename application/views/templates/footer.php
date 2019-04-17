@@ -40,29 +40,15 @@
       </div>
     </div>
     <div class="row footer_bottom justify-content-center">
-      <p class="col-lg-8 col-sm-12 footer-text">
-        IEEE SB TKMCE | <script>
-        var today = new Date();
-        var dd = today.getDate();
-        var mm = today.getMonth()+1; //January is 0!
-        var yyyy = today.getFullYear();
-
-        if(dd<10) {
-            dd = '0'+dd
-        }
-
-        if(mm<10) {
-            mm = '0'+mm
-        }
-
-        today = mm + '/' + dd + '/' + yyyy;
-        document.write(today);
-        </script>
+      <p class="col-lg-8 col-sm-12 footer-text " ><b style="color:black;">
+        IEEE SB TKMCE | <?php
+        date_default_timezone_set("Asia/Calcutta");
+        $temp = date("Y-m-d");
+        
+        echo $temp;  ?> IST
+        </b>
       </p>
-      <p class="col-lg-8 col-sm-12 footer-text">
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+     
     </div>
   </div>
 </footer>

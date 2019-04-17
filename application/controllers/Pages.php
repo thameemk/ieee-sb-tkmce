@@ -27,7 +27,8 @@ class Pages extends CI_Controller {
       if ( ! file_exists(APPPATH.'views/static/'.$page.'.php')){
           show_404();
       }
-      $data['page_title'] = $page;
+      $temp = ucfirst($page);
+      $data['page_title'] = $temp;
       $this->load->view('templates/header',$data);
       $this->load->view('static/'.$page);
       $this->load->view('templates/footer');
@@ -47,8 +48,9 @@ class Pages extends CI_Controller {
       $data['tags']=$this->report_model->get_tags();
       $data['pop_tags']=$this->report_model->pop_tags();
 
-      // $data['stories']=$this->report_model->get_stories();
-      $data['page_title'] = $title;
+      $temp = str_replace("-"," ",$title);
+      $temp1 = ucfirst($temp);
+      $data['page_title'] = $temp1;
       $temp = $this->report_model->get_stories($title);
       if(count($temp)==1){
       $data['story']=$temp[0];
@@ -92,7 +94,7 @@ class Pages extends CI_Controller {
   }
 
   function team(){
-    $data['page_title'] = 'Our Team';
+    $data['page_title'] = 'Execom';
     $data['team']=$this->report_model->get_team();
     $this->load->view('templates/header',$data);
     $this->load->view('static/team',$data);
