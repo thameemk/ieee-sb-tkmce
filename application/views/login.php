@@ -2,22 +2,17 @@
 <html lang="en">
 
 <head>
-  <title>Admin Login | IEEE SB TKMCE</title>
+  <title>Admin Login - IEEE SB TKMCE</title>
 
-  <!-- for-mobile-apps -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link rel="icon" href="<?=base_url();?>/assets/front/img/logo_title.png" type="image/png">
+  <link rel="icon" href="<?=base_url();?>/assets/front/img/ieee_mb_blue.png" type="image/png">
 
-  <!-- css files -->
-  <link href="<?=base_url();?>assets/login/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
-  <link href="<?=base_url();?>assets/login/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
-  <link href="<?=base_url();?>assets/login/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
-  <!-- //css files -->
+  <link href="<?=base_url();?>assets/login/bootstrap.css" rel='stylesheet' type='text/css' />
+  <link href="<?=base_url();?>assets/login/style.css" rel='stylesheet' type='text/css' />
+  <link href="<?=base_url();?>assets/login/font-awesome.min.css" rel="stylesheet">
 
-  <!-- google fonts -->
   <link href="//fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext,vietnamese" rel="stylesheet">
-  <!-- //google fonts -->
 
 </head>
 
