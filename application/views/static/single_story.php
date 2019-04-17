@@ -18,13 +18,10 @@
                         </div>
                         <div class="col-lg-3  col-md-3">
                             <div class="blog_info text-right">
-                                <div class="post_tag">
-
-                                  <!-- <a href="<?php echo base_url();?>home">IEEE SB TKMCE</a>                       -->
-                                </div>
+                                
                                 <ul class="blog_meta list">
 
-                                    <li><i class="lnr lnr-calendar-full mr-2"></i><b><?=$story['story_date']?></b></li>
+                                    <li><i class="lnr lnr-calendar-full mr-2"></i><b style="opacity:.7;"><?=$story['story_date']?></b></li>
                                     <li><i class="lnr lnr-location"><b style="color:black;font-size:.8em;"></i><?=$story['venue']?></b></li>
                                     <li><i class="lnr lnr-tag"><b style="color:black;font-size:.7em;"></i><?=$story['category']?></b></li>
 
