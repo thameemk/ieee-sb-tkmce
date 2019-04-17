@@ -20,7 +20,7 @@
                                 <!-- </div> -->
                                 <ul class="blog_meta list">
 
-                                    <li><i class="lnr lnr-calendar-full mr-2"></i><b><?=$update['event_date']?></b></li>
+                                    <li><i class="lnr lnr-calendar-full mr-2"></i><b style="opacity:.7;"><?=$update['event_date']?></b></li>
                                     <li><i class="lnr lnr-location"><b style="color:black;font-size:.8em;"></i><?=$update['venue']?></b></li>
                                     <li><i class="lnr lnr-tag"><b style="color:black;font-size:.7em;"></i><?=$update['category']?></b></li>
                                 </ul>
