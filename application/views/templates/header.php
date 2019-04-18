@@ -34,6 +34,7 @@
 	.team-font{
 		font-family: 'Lato';
 	}
+	
 	</style>
 
 
@@ -51,7 +52,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+					<div style="background:#00629B;" class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav justify-content-end">
 							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>home">Home</a></li>
 							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>about">About</a></li>
