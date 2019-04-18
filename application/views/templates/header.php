@@ -57,8 +57,9 @@
 							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>about">About</a></li>
 							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>stories">Stories</a></li>
 							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>updates">Updates</a></li>
-							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>contact">Contact</a></li>
 							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>team">Team</a></li>
+							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>contact">Contact</a></li>
+
 							<?php if ($this->session->userdata('user_email') == TRUE) {?>
 								<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>Login/logout">Logout</a></li>
 							<?php } else { ?>
