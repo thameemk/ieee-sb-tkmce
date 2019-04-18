@@ -31,6 +31,9 @@
 		-o-background-size: cover;
 		background-size: cover;
 	}
+	.team-font{
+		font-family: 'Lato';
+	}
 	</style>
 
 

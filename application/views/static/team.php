@@ -7,7 +7,7 @@
        <div class=" ml-5 mr-5 row single-comment justify-content-between d-flex">
            <div class="user justify-content-between d-flex">
                <div class="desc ">
-                   <h5 ><span><?=$row['name'] ?></span></h5>
+                   <h5 class="team-font"><span><?=$row['name'] ?></span></h5>
                    <p class="comment">
                        <?=$row['position'] ?>
                    </p>
@@ -34,7 +34,7 @@
         <div class=" ml-5 mr-5 row single-comment justify-content-between d-flex">
             <div class="user justify-content-between d-flex">
                 <div class="desc">
-                    <h5 ><span><?=$row['name'] ?></span></h5>
+                    <h5 class="team-font"><span><?=$row['name'] ?></span></h5>
                     <p class="comment">
                         <?=$row['position'] ?>
                     </p>
@@ -56,7 +56,7 @@
         <div class=" ml-5 mr-5 row single-comment justify-content-between d-flex">
             <div class="user justify-content-between d-flex">
                 <div class="desc">
-                    <h5><span><?=$row['name'] ?></span></h5>
+                    <h5 class="team-font"><span><?=$row['name'] ?></span></h5>
                     <p class="comment">
                         <?=$row['position'] ?>
                     </p>
@@ -78,7 +78,7 @@
         <div class=" ml-5 mr-5 row single-comment justify-content-between d-flex">
             <div class="user justify-content-between d-flex">
                 <div class="desc">
-                    <h5><span><?=$row['name'] ?></span></h5>
+                    <h5 class="team-font"><span><?=$row['name'] ?></span></h5>
                     <p class="comment">
                         <?=$row['position'] ?>
                     </p>
