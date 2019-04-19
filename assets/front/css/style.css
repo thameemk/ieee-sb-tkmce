@@ -205,12 +205,12 @@ button:focus {
       .header_area .navbar .nav .nav-item .nav-link {
         font: 500 14px/100px "Rubik", sans-serif;
         text-transform: uppercase;
-        color: #000000;
+        color: #00629B;
         padding: 0px;
         display: inline-block; }
         .header_area .navbar .nav .nav-item .nav-link:after {
           display: none; }
-      .header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
+      .header_area .navbar .nav .nav-item .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
         color: #4458dc; }
       .header_area .navbar .nav .nav-item.submenu {
         position: relative; }

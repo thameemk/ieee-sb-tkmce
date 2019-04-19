@@ -3,6 +3,7 @@ class Report_model extends CI_Model {
     public function __construct()
     {
         $this->load->database();
+
     }
 
       public function pop_tags(){
@@ -97,7 +98,7 @@ class Report_model extends CI_Model {
 
      }
      public function subscribe($data){
-       $this->db->insert('subscribtions', $data);
+      $this->db->insert('subscribtions', $data);
 
      }
      public function awards(){

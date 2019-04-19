@@ -45,13 +45,14 @@ class Pages extends CI_Controller {
       $this->load->view('templates/footer');
     }
     else{
+      $title1=$this->security->xss_clean($title);
       $data['tags']=$this->report_model->get_tags();
       $data['pop_tags']=$this->report_model->pop_tags();
 
       $temp = str_replace("-"," ",$title);
       $temp1 = ucfirst($temp);
       $data['page_title'] = $temp1;
-      $temp = $this->report_model->get_stories($title);
+      $temp = $this->report_model->get_stories($title1);
       if(count($temp)==1){
       $data['story']=$temp[0];
       $this->load->view('templates/header',$data);
@@ -73,6 +74,7 @@ class Pages extends CI_Controller {
       $this->load->view('templates/footer');
     }
     else{
+      $title1=$this->security->xss_clean($title);
 
       $data['tags']=$this->report_model->get_tags();
       $data['pop_tags']=$this->report_model->pop_tags();
@@ -80,7 +82,7 @@ class Pages extends CI_Controller {
       $data['updates']=$this->report_model->updates();
       $data['page_title'] = $title;
 
-      $temp = $this->report_model->updates($title);
+      $temp = $this->report_model->updates($title1);
       if(count($temp)==1){
       $data['update']=$temp[0];
       $this->load->view('templates/header',$data);
@@ -101,6 +103,7 @@ class Pages extends CI_Controller {
     $this->load->view('templates/footer');
   }
   function news_letter(){
+    $data=$this->security->xss_clean($data1);
     $this->load->model('report_model');
     $data = array(
     'email' => $this->input->post('email'),

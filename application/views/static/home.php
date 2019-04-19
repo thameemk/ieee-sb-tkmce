@@ -7,7 +7,7 @@
       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active" style="background-image: url('<?=base_url();?>/assets/front/img/banner/1.png')">
+      <div class="carousel-item active " style="background-image: url('<?=base_url();?>/assets/front/img/banner/1.png')">
         <div class="carousel-caption d-none d-md-block">
           <h2 class="display-4 head-font text-white">Annual General Body Meeting 2019</h2>
           <p class="lead"><a href="<?php echo base_url();?>stories/annual-general-body-meeting">Readmore</a></p>
@@ -71,7 +71,7 @@
 <?php } ?>
 
     </div>
-    <a href="<?=base_url()?>events" class="genric-btn primary circle arrow">Keep Reading<span class="lnr lnr-arrow-right"></span></a>
+    <a href="<?=base_url()?>updates" class="genric-btn primary circle arrow">Keep Reading<span class="lnr lnr-arrow-right"></span></a>
 
   </div>
 </section>

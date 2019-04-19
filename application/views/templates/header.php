@@ -23,18 +23,35 @@
 		font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;
 	}
 	.carousel-item {
-		height: 100vh;
+		/* height: 100vh; */
 		min-height: 350px;
 		background: no-repeat center center scroll;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-	}
+		width:100%;
+  		height:500px;
+	}	
 	.team-font{
 		font-family: 'Lato';
 	}
-	
+	@media only screen and (max-width: 1000px) {
+	.navbar-custom{
+		background:#00629B;
+	}
+	.menu-text{
+		color:#ffffff;
+	}
+	.nav-link{
+		color:#ffffff;
+	}
+  }
+  @media only screen and (min-width: 1000px) {
+	.menu-text{
+		color:#00629B;
+	}
+  }
 	</style>
 
 
@@ -52,19 +69,19 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<div style="background:#00629B;" class="collapse navbar-collapse offset" id="navbarSupportedContent">
+					<div class="collapse navbar-collapse offset navbar-custom" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav justify-content-end">
-							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>home">Home</a></li>
-							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>about">About</a></li>
-							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>stories">Stories</a></li>
-							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>updates">Updates</a></li>
-							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>team">Team</a></li>
-							<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>contact">Contact</a></li>
+							<li class="nav-item"><a class="nav-link menu-text" style="text-align: center;" href="<?=base_url()?>home">Home</a></li>
+							<li class="nav-item"><a class="nav-link menu-text" style="text-align: center;" href="<?=base_url()?>about">About</a></li>
+							<li class="nav-item"><a class="nav-link menu-text" style="text-align: center;" href="<?=base_url()?>stories">Stories</a></li>
+							<li class="nav-item"><a class="nav-link menu-text" style="text-align: center;" href="<?=base_url()?>updates">Updates</a></li>
+							<li class="nav-item"><a class="nav-link menu-text" style="text-align: center;" href="<?=base_url()?>team">Team</a></li>
+							<li class="nav-item"><a class="nav-link menu-text" style="text-align: center;" href="<?=base_url()?>contact">Contact</a></li>
 
 							<?php if ($this->session->userdata('user_email') == TRUE) {?>
-								<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>Login/logout">Logout</a></li>
+								<li class="nav-item"><a class="nav-link menu-text" style="text-align: center;" href="<?=base_url()?>Login/logout">Logout</a></li>
 							<?php } else { ?>
-								<li class="nav-item"><a class="nav-link" style="color:#00629B;" href="<?=base_url()?>admin_login">Login</a></li>
+								<li class="nav-item"><a class="nav-link menu-text" style="text-align: center;" href="<?=base_url()?>admin_login">Login</a></li>
 							<?php } ?>
 						</ul>
 					</div>
