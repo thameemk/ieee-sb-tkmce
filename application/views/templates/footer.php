@@ -19,7 +19,7 @@
           <div class="footer_social" style="text-align:left;">
             <a href="https://www.facebook.com/ieeesbtkmce"><i class="fa fa-facebook"></i></a>
             <a href="https://www.twitter.com/IEEEorg"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.instagram.com/ieeeorg"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.instagram.com/ieeesbtkmce/"><i class="fa fa-instagram"></i></a>
           </div>
         </div>
       </div>
