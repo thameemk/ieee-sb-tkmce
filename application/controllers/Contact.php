@@ -17,19 +17,24 @@ class Contact extends CI_Controller{
 	public function postEmail(){
 		$data = $this->input->post();
 
+        echo "flag3";
 
 		$this->load->library('email');
+        echo "flag4";
 
 		$config = array();
+		// $config['SMTPSecure'] = 'ssl';
 		$config['protocol'] = 'smtp';
-		$config['smtp_host'] = 'smtp.mail.yahoo.com';
-		$config['smtp_user'] = 'thameemk612@yahoo.com';
-		$config['smtp_pass'] = '';
-		$config['smtp_port'] = '587';
+		$config['smtp_host'] = 'mail.ieeesbtkmce.in ';
+		$config['smtp_user'] = 'webadmin@ieeesbtkmce.in';
+		$config['smtp_pass'] = 'Qr~E[E?=Aj~1';
+		$config['smtp_port'] = '465';
 		$this->email->initialize($config);
+        echo "flag5";
+
 
 		$this->email->set_newline("\r\n");
-
+        echo "flag6";
 		$this->email->from($data['email']);
 		$this->email->from($data['name']);
 

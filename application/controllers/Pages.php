@@ -103,8 +103,8 @@ class Pages extends CI_Controller {
     $this->load->view('templates/footer');
   }
   function news_letter(){
-    $data=$this->security->xss_clean($data1);
     $this->load->model('report_model');
+    $data=$this->security->xss_clean($data);
     $data = array(
     'email' => $this->input->post('email'),
     );

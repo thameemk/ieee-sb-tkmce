@@ -8,6 +8,16 @@
 	<meta name="keywords" content="IEEE,IEEE SB TKMCE,IEEEorg,IEEER10,TKMCE,TKM College of engineering,IEEE Kerala,">
 	<link rel="icon" href="<?=base_url();?>/assets/front/img/ieee_mb_blue.png" type="image/png">
 	<title><?php echo $page_title; ?> - IEEE SB TKMCE</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138758491-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-138758491-1');
+</script>
+
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/css/bootstrap.css">
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/vendors/linericon/style.css">
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/css/font-awesome.min.css">
