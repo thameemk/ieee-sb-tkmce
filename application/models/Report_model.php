@@ -106,5 +106,8 @@ class Report_model extends CI_Model {
         $query = $this->db->get('awards');
         return $query->result_array();
      }
+     public function messages($data){
+      $this->db->insert('contacts', $data);
+     }
 
 }
