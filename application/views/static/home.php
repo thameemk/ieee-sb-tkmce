@@ -91,9 +91,12 @@
                   <?php foreach($awards as $row){ ?>
                     <div class="testi_item">
                         <div class="row">
-                            <div class="col-lg-4">
-                                <img height="130px" width="130px" src="<?php echo base_url();?>assets/upload/awards/<?=$row['images']?>">
+                          
+                            <div class="col-lg-4 ">
+                      
+                                <img style="align-items:center;" height="130px" width="130px" src="<?php echo base_url();?>assets/upload/awards/<?=$row['images']?>">
                             </div>
+                            
                             <div class="col-lg-8">
                                 <div class="testi_text">
                                     <h4 class="head-font"><?=$row['award_title']?> </h4>

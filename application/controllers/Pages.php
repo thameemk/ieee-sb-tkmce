@@ -104,7 +104,8 @@ class Pages extends CI_Controller {
   }
   function news_letter(){
     $this->load->model('report_model');
-    $data=$this->security->xss_clean($data);
+    // $data=$this->security->xss_clean($data);
+      // $data['userLocation'] = file_get_contents('http://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR']) ;
     $data = array(
     'email' => $this->input->post('email'),
     );
