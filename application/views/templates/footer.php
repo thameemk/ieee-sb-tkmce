@@ -34,7 +34,7 @@
             <h5 class="head-font mt-3" style="letter-spacing: .1em;">Counselor</h5>
             Mrs. Reshna S : <a href="tel:+919496410839">+91 9496410839</a>
             <h5 class="head-font mt-3">Webmaster</h5>
-            <a href="//thameem.me/">Thameem K </a>
+            <a href="//thameem.me/" target="_blank">Thameem K </a>
           </p>
         </div>
       </div>
