@@ -128,6 +128,9 @@ class Pages extends CI_Controller {
     $this->load->view('reg-oncore');
     $this->load->view('templates/footer');
   }
+  function regOncoreForm(){
+    $data = $this->input->post();
+  }
 
 
 }

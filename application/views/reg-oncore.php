@@ -1,50 +1,33 @@
 <br><br><br>
-<section id="JOIN">
-    <div class="container">
-        <div class="section-top-border">
-            <h3 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;" class="mb-30 text-center">Register Here</h3>
-            <div class="col-lg-12 no-padding appoinment-right">
-                <?php if($this->session->flashdata('msg')): ?>
-                <h3 style="color:#00008B; font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">
-                    <?php echo $this->session->flashdata('msg'); ?>
-                </h3>
-                <?php endif; ?>
-                <form class="appoinment-form" name="submit-to-google-sheet" action="process" method="post">
-                    <div class="row">
-                        <div class="col-lg-6 d-flex flex-column mb-3">
-                            <input name="name" placeholder="Full Name" onfocus="this.placeholder = 'Full Name'" onblur="this.placeholder = ' Full Name'" class="form-control mt-20" required="" type="text">
-                        </div>
-                        <div class="col-lg-6 d-flex flex-column mb-3">                           
-                            <input name="class" placeholder=" Batch" onfocus="this.placeholder = 'Batch'" onblur="this.placeholder = ' Batch'" class="form-control mt-20" required="" type="text">
-                        </div>                        
-                        <div class="col-lg-6 d-flex flex-column mb-3">
-                            <input name="phone" placeholder=" Phone" onfocus="this.placeholder = 'Phone'" onblur="this.placeholder = ' Phone'" class="form-control mt-20" type="text">
-                        </div>
-                        <div class="col-lg-6 d-flex flex-column mb-3">
-                            <input name="email" placeholder=" Emai" onfocus="this.placeholder = 'Category'" onblur="this.placeholder = ' Category'" class="form-control mt-20" type="text">
-                        </div>
-                        <!-- <div class="col-lg-6 d-flex flex-column mb-3">
+<section class="newsletter_area">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-12">
+                    <div class="subscription_box text-center">
+                        <h2 class="text-uppercase text-white">Register For OnCore</h2>
 
-                                    <input name="attendice" placeholder=" Attendice" onfocus="this.placeholder = 'Attendice'" onblur="this.placeholder = ' Attendice'" class="form-control mt-20"  type="text">
-                                </div> -->
-                        <!-- <div class="col-lg-6 d-flex flex-column mb-3">
-                                                                    <h5>Upload Image:</h5>
-                                                                        <input name="image" placeholder=" Upload Image" onfocus="this.placeholder = 'Upload Image'" onblur="this.placeholder = ' Upload Image'" class="mt-20" style="height:40px;" required="" type="file">
-                                                                </div> -->
-                        <div class="col-lg-12 flex-column mb-3">
-                            <textarea rows="2" class="form-control mt-20" name="smessage" placeholder="Short Content" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Short Content'"></textarea>
-                        </div>
-                        <div class="col-lg-12 flex-column mb-3">
-                            <textarea rows="5" class="form-control mt-20" name="lmessage" placeholder="Full Content" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Content'"></textarea>
-                        </div>
-                        <br>&nbsp;
-                        <div class="col-lg-6 d-flex justify-content-end send-btn">
-                            <button type="submit" class="ui inverted green button  " id="reg">Submit</button>
+                        <div class="subcribe-form" id="">
+                            <form novalidate="true" action="" method="post" class="subscription relative">
+                                <input name="name" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'" required="" type="text"><br><br>
+                                
+                               <!--  <select name="batch" placeholder="Batch" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Batch'" required=""> -->
+                                <select>
+                                <option value="t3a">T3A</option>
+                                <option value="t3b">T3B</option>
+                                <option value="r3">R3</option>
+                                <option value="p3">P3</option>
+
+                                </select>
+                                <br><br>
+                                
+                                <input name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" type="email"><br><br>
+                                <input name="phone" placeholder="Phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'" required="" type="text"><br><br>
+                                <button class="primary-btn hover d-inline">SUBMIT</button>
+                                <div class="info"></div>
+                            </form>
                         </div>
                     </div>
-                </form>
-                <br>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
