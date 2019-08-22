@@ -1,5 +1,6 @@
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500|Rubik:500,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap");
 
 body {
   line-height: 26px;
@@ -203,7 +204,7 @@ button:focus {
     .header_area .navbar .nav .nav-item {
       margin-right: 45px; }
       .header_area .navbar .nav .nav-item .nav-link {
-        font: 500 14px/100px "Rubik", sans-serif;
+        font: 500 14px/100px "Montserrat", sans-serif;
         text-transform: uppercase;
         color: #00629B;
         padding: 0px;

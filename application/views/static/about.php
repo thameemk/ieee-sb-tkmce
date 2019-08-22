@@ -7,7 +7,7 @@
     <h2 class="head-font text-center">About Us</h2>
 
     <div class="section-top-border">
-      <h3 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;" class="mb-30 title_color"> TKM College of Engineering</h3>
+      <h3 style="font-family: 'Montserrat';font-weight: normal;font-style: normal;" class="mb-30 title_color"> TKM College of Engineering</h3>
       <div class="row">
         <div class="col-md-3">
           <img src="https://tkmce.ac.in/wp-content/themes/tkm/images/tkmce_logo.png" alt="" class="img-fluid">
@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="section-top-border">
-      <h3  style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;"  class="mb-30 title_color">IEEE Student Branch TKMCE</h3>
+      <h3  style="font-family: 'Montserrat';font-weight: normal;font-style: normal;"  class="mb-30 title_color">IEEE Student Branch TKMCE</h3>
       <div class="row">
         <div class="col-md-9  text-justify">
           <p>IEEE, a nonprofit organization is the world’s leading professional association for the advancement of technology through its 400,000 members including 100,000 student members in more than 160 countries. IEEE is the ‘trusted voice’ for engineering, computing and technology information around the globe. TKM College of Engineering has stood as a symbol of
@@ -41,13 +41,13 @@
       <div class="row">
         <div class="col-md-6">
           <div class="single-defination">
-            <h3  style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;" class="mb-30 title_color">Vision</h3>
+            <h3  style="font-family: 'Montserrat';font-weight: normal;font-style: normal;" class="mb-30 title_color">Vision</h3>
             <p>To reach the benefits of the great organization to the society and to contribute to the technical centric approach.</p>
           </div>
         </div>
         <div class="col-md-6">
           <div class="single-defination">
-            <h3 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;"  class="mb-30 title_color">Mission</h3>
+            <h3 style="font-family: 'Montserrat';font-weight: normal;font-style: normal;"  class="mb-30 title_color">Mission</h3>
             <p style="text-align:justify">
               <ul>To provide a platform for the members to
 

@@ -4,7 +4,7 @@
     <div class="banner_inner d-flex align-items-center">
       <div class="container">
         <div class="banner_content text-center">
-          <h2 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">Join iEEE</h2>
+          <h2 style="font-family: 'Montserrat';font-weight: normal;font-style: normal;">Join iEEE</h2>
           <div class="page_link">
             <a href="<?=base_url()?>home">Home</a>
             <a href="<?=base_url()?>join-ieee">Join IEEE</a>
@@ -19,7 +19,7 @@
   <section class="sample-text-area">
     <div class="container">
       <div>
-        <h3 class="text-heading title_color" style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">How to join?</h3>
+        <h3 class="text-heading title_color" style="font-family: 'Montserrat';font-weight: normal;font-style: normal;">How to join?</h3>
         <p class="sample-text">
           For IEEE international, the membership fee is 27$ (USD). Each IEEE member is a part of the Student Branch.
           Membership is valid for a Calendar Year (not academic year) We start taking applications for memberships from September
@@ -28,7 +28,7 @@
         </p>
       </div>
       <div class="pt-5">
-        <h3 class="text-heading title_color" style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">Why join IEEE?</h3>
+        <h3 class="text-heading title_color" style="font-family: 'Montserrat';font-weight: normal;font-style: normal;">Why join IEEE?</h3>
         <p class="sample-text">
           IEEE memberships support technical innovation for humanity and the profession. Access to cutting-edge information,
           networking opportunities, career enhancement, and many other exclusive member benefits are the key values of IEEE membership.
@@ -37,7 +37,7 @@
         <div class="mt-sm-30 typo-sec pt-3">
           <ul>
             <li>
-              <h4 class="title_color"style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;" >Access to cutting-edge knowledge</h4>
+              <h4 class="title_color"style="font-family: 'Montserrat';font-weight: normal;font-style: normal;" >Access to cutting-edge knowledge</h4>
             </li>
             <ul class="unordered-list ml-2 mt-2 mb-3">
               <li><a href="http://www.ieee.org/publications_standards/index.html">IEEE Spectrum Magazine </a>–Monthly (12 issues, print and online)</li>
@@ -47,7 +47,7 @@
               <li>What ’s New @ IEEE –Monthly electronic newsletter, the latest top 10 technical news directly</li>
             </ul>
             <li>
-              <h4 class="title_color"style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">Networking Opportunities</h4>
+              <h4 class="title_color"style="font-family: 'Montserrat';font-weight: normal;font-style: normal;">Networking Opportunities</h4>
             </li>
             <ul class="unordered-list ml-2 mb-3">
               <p>IEEE membership offers several benefits that will help you keep connected and
@@ -63,7 +63,7 @@
                 mentoring partnership relationship.
             </ul>
             <li>
-              <h4 class="title_color"style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">Profession</h4>
+              <h4 class="title_color"style="font-family: 'Montserrat';font-weight: normal;font-style: normal;">Profession</h4>
             </li>
             <ul class="unordered-list ml-2 mb-3">
               <p>IEEE membership builds a platform to introduce technology careers to students, to empower them to build and own their careers, and to enhance their resume.</p>
@@ -82,7 +82,7 @@
 
             </ul>
             <li>
-              <h4 class="title_color" style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">Add-On Benefits</h4>
+              <h4 class="title_color" style="font-family: 'Montserrat';font-weight: normal;font-style: normal;">Add-On Benefits</h4>
             </li>
             <ul class="unordered-list ml-2">
               <p>IEEE Member Discounts, in general, and student member discount, in particular, offer substantial cost savings on various products and services as a benefit of IEEE membership. Graduate Students reap the benefits such as discounts on

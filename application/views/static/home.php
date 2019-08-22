@@ -45,7 +45,7 @@
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
         <div class="main_title" style="margin-top:50px;margin-bottom:25px;">
-          <h2 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">Updates</h2>
+          <h2 style="font-family: 'Montserrat';font-weight: normal;font-style: normal;">Updates</h2>
           <h4 style="color:red;"> </h4>
         </div>
       </div>
@@ -61,7 +61,7 @@
         <div class="feature_item"style="box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
         background: #fff;">
           <p class="font-weight-bold"><?=$row['event_date']?></p>
-          <h4 class="mt-3 " style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;"><?=$row['event_title'] ?></h4>
+          <h4 class="mt-3 " style="font-family: 'Montserrat';font-weight: normal;font-style: normal;"><?=$row['event_title'] ?></h4>
           <p style="text-align:justify;"><?=$row['short_content'] ?></p>
           <br>
 
@@ -117,7 +117,7 @@
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
         <div class="main_title" style="margin-top:100px;margin-bottom:50px;">
-          <h2 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;"> Stories</h2>
+          <h2 style="font-family: 'Montserrat';font-weight: normal;font-style: normal;"> Stories</h2>
           <h4 style="color:red;"> </h4>
         </div>
       </div>
@@ -133,7 +133,7 @@
         <div class="feature_item"style="box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
         background: #fff;">
           <p class="font-weight-bold"><?=$row['story_date']?></p>
-          <h4 class="mt-3 " style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;"><?=$row['story_title'] ?></h4>
+          <h4 class="mt-3 " style="font-family: 'Montserrat';font-weight: normal;font-style: normal;"><?=$row['story_title'] ?></h4>
           <p style="text-align:justify;"><?=$row['story_content'] ?></p>
           <br>
 
@@ -150,7 +150,7 @@
 <section class="mb-5 pt-2">
   <div class="container">
     <div class="main_title">
-      <h2 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">SOCIETIES</h2>
+      <h2 style="font-family: 'Montserrat';font-weight: normal;font-style: normal;">SOCIETIES</h2>
     </div>
     <div class="row justify-content-center">
       <div class="col-lg-6">
@@ -175,10 +175,10 @@
 <section class="sample-text-area pt-2">
   <div class="container">
     <div class="main_title">
-      <h2 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">Join ieee</h2>
+      <h2 style="font-family: 'Montserrat';font-weight: normal;font-style: normal;">Join ieee</h2>
     </div>
     <div>
-      <h3 class="text-heading title_color" style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;">How to join?</h3>
+      <h3 class="text-heading title_color" style="font-family: 'Montserrat';font-weight: normal;font-style: normal;">How to join?</h3>
       <p class="sample-text text-justify">
         For IEEE international, the membership fee is 27$ (USD). Each IEEE member is a part of the Student Branch.
         Membership is valid for a Calendar Year (not academic year) We start taking applications for memberships from September

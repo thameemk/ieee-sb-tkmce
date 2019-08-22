@@ -25,12 +25,13 @@
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/css/magnific-popup.css">
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/vendors/nice-select/css/nice-select.css">
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/css/style.css">
-	<!-- <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/> -->
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<style>
 	
 	.head-font{
-		font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;
+		font-family: 'Montserrat', sans-serif;
 	}
 	.carousel-item {
 		/* height: 100vh; */
