@@ -54,3 +54,6 @@
     </div>
 </div>
 </section>
+<section>
+    <h4 class="mt-3 mb-3 text-center">For any web related queries contact <a href="mailto:webadmin@ieeesbtkmce.in">webadmin@ieeesbtkmce.in</a></h4>
+</section>
