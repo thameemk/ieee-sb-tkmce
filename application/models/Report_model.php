@@ -109,5 +109,7 @@ class Report_model extends CI_Model {
      public function messages($data){
       $this->db->insert('contacts', $data);
      }
-
+    public function onCoreReg($data){
+      $this->db->insert('onCoreReg', $data);
+     }
 }

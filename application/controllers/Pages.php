@@ -130,6 +130,33 @@ class Pages extends CI_Controller {
   }
   function regOncoreForm(){
     $data = $this->input->post();
+    $data=$this->security->xss_clean($data);
+    $this->form_validation->set_rules('email','Email','required|is_unique[onCoreReg.email]');
+    if($this->form_validation->run() == FALSE){
+        $this->session->set_flashdata('fail', 'You have already registred');
+        redirect('oncore-registration');
+      }
+    else{
+        $this->form_validation->set_rules('name','Name','required');
+        $this->form_validation->set_rules('phone','Phone','required');
+        $this->form_validation->set_rules('batch','Batch','required');
+        if($this->form_validation->run() == FALSE){
+        $this->session->set_flashdata('fail', 'Fill all fields');
+        redirect('oncore-registration');
+        }
+        else{
+          $data = array(
+                      'name' => $this->input->post('name'),
+                      'email' => $this->input->post('email'),
+                      'phone' => $this->input->post('phone'),
+                      'batch' => $this->input->post('batch'),
+                    );
+          $this->report_model->OnCoreReg($data);
+          $this->session->set_flashdata('msg', 'Registration Success!');
+          redirect('oncore-registration');
+        }
+
+      }
   }
 
 
