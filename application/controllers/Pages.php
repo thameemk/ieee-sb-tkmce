@@ -103,18 +103,30 @@ class Pages extends CI_Controller {
     $this->load->view('templates/footer');
   }
   function news_letter(){
-    $this->load->model('report_model');
-    // $data=$this->security->xss_clean($data);
-      // $data['userLocation'] = file_get_contents('http://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR']) ;
-    $data = array(
-    'email' => $this->input->post('email'),
-    );
-    $this->report_model->subscribe($data);
+    $data = $this->input->post();
+    $data=$this->security->xss_clean($data);
+    $this->form_validation->set_rules('email','Email','required');
+    if($this->form_validation->run() == FALSE){
+               $this->session->set_flashdata('msg', 'Fill all fields! ');
+               redirect(base_url() . "stories");
+           }
+    else{       
+      $data = array(
+      'email' => $this->input->post('email'),
+      );
+      $this->report_model->subscribe($data);
 
-    $this->session->set_flashdata('msg', 'Successfully subscribed');
-    $data['stories']=$this->report_model->get_stories();
-    $data['stories']="Successfully Subscribed";
-    redirect('stories');
+      $this->session->set_flashdata('msg', 'Successfully subscribed');
+      $data['stories']=$this->report_model->get_stories();
+      $data['stories']="Successfully Subscribed";
+      redirect('stories');
+    }
+  }
+  function regOncore(){
+    $data['page_title'] = "Register for OnCore";
+    $this->load->view('templates/header',$data);
+    $this->load->view('reg-oncore');
+    $this->load->view('templates/footer');
   }
 
 

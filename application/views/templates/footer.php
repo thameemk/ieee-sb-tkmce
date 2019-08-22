@@ -34,7 +34,7 @@
             <h5 class="head-font mt-3" style="letter-spacing: .1em;">Counselor</h5>
             Mrs. Reshna S : <a href="tel:+919496410839">+91 9496410839</a>
             <h5 class="head-font mt-3">Webmaster</h5>
-            <a href="//thameem.me/" target="_blank">Thameem K </a>
+            <a href="//thameem.me/" target="_blank">Thameem K +91 8281582725</a>
           </p>
         </div>
       </div>
@@ -71,7 +71,6 @@
 </script>
 
 <script src="<?=base_url();?>/assets/front/js/jquery-3.2.1.min.js"></script>
-<script src="<?=base_url();?>/assets/front/js/popper.js"></script>
 <script src="<?=base_url();?>/assets/front/js/bootstrap.min.js"></script>
 <script src="<?=base_url();?>/assets/front/js/stellar.js"></script>
 <script src="<?=base_url();?>/assets/front/vendors/lightbox/simpleLightbox.min.js"></script>
@@ -80,7 +79,6 @@
 <script src="<?=base_url();?>/assets/front/vendors/isotope/isotope-min.js"></script>
 <script src="<?=base_url();?>/assets/front/vendors/owl-carousel/owl.carousel.min.js"></script>
 <script src="<?=base_url();?>/assets/front/js/jquery.ajaxchimp.min.js"></script>
-<script src="<?=base_url();?>/assets/front/js/mail-script.js"></script>
 <script src="<?=base_url();?>/assets/front/js/theme.js"></script>
 </body>
 

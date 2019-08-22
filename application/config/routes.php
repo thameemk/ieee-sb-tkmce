@@ -19,6 +19,8 @@ $route['tags/(.+)'] = 'pages/tags/$1';
 $route['team'] = 'pages/team';
 $route['admin_login'] = 'Login/index';
 
+$route['oncore-registration'] = 'Pages/regOncore';
+
 
 $route['email'] = 'Email_Controller/index';
 

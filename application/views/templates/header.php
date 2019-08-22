@@ -25,7 +25,7 @@
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/css/magnific-popup.css">
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/vendors/nice-select/css/nice-select.css">
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/css/style.css">
-	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
+	<!-- <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/> -->
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<style>
 	
