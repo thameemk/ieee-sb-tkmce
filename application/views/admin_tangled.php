@@ -6,7 +6,8 @@
             <center><?php echo $this->session->flashdata('msg'); ?></center>
         </div>
         <?php endif; ?>
-        <table class="table table-bordered">
+        <div class="table-responsive">
+        <table class="table table-hover table-striped ">
             <thead>
                 <tr>
                     <th>SL NO</th>
@@ -36,5 +37,6 @@
                 <?php } ?>
             </tbody>
         </table>
+    </div>
     </div>
 </section>
