@@ -123,7 +123,7 @@ class Pages extends CI_Controller {
     }
   }
   function regOncore(){
-    $data['page_title'] = "Register for OnCore";
+    $data['page_title'] = "Register for TANGLED";
     $this->load->view('templates/header',$data);
     $this->load->view('reg-oncore');
     $this->load->view('templates/footer');

@@ -16,7 +16,7 @@ class Login extends CI_Controller {
 
     public function process() {
         // Load the model
-$this->load->model('report_model');
+        $this->load->model('report_model');
         $result = $this->report_model->login();
 
         if(! $result){
