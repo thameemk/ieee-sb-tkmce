@@ -1,6 +1,11 @@
 <br><br><br>
 <section class="mt-5 mb-5">
     <div class="container">
+         <?php if($this->session->flashdata('msg')): ?>
+        <div class="alert alert-success" role="alert">
+            <center><?php echo $this->session->flashdata('msg'); ?></center>
+        </div>
+        <?php endif; ?>
         <table class="table table-bordered">
             <thead>
                 <tr>

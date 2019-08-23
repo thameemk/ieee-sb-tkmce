@@ -18,6 +18,11 @@
 
 <body>
 	<div class="popup">
+		 <?php if($this->session->flashdata('msg')): ?>
+        <div class="alert alert-danger" role="alert">
+        	<center><?php echo $this->session->flashdata('msg'); ?></center>
+        </div>
+        <?php endif; ?>               
 		<div class="login px-sm-4 mx-auto mw-100">
 			<h5 class="text-center mb-4">Login to cPanel<h5>
 			<form action="<?=base_url("Login/process")?>" method="post">

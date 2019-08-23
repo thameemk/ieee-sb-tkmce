@@ -29,7 +29,7 @@
                         </div>
                         <div class="col-lg-9 col-md-9 blog_details quotes">
 
-                            <p class="excert text-justify ">
+                            <p class="excert text-justify head-font">
                             <?=$update['full_content']?>
                             </p>
 

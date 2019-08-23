@@ -21,11 +21,11 @@ class Login extends CI_Controller {
 
         if(! $result){
             // If user did not validate, then show them login page again
-            $msg = 'Invalid email and/or password.';
-            $data['msg'] = $msg;
-            $this->load->view('login', $data);
+            $this->session->set_flashdata('fail', 'Email or Password is incorrect');
+            $this->load->view('login');
         }
         else {
+            $this->session->set_flashdata('msg', 'Login success');            
             redirect('Admin/home');
 
         }
@@ -34,8 +34,7 @@ class Login extends CI_Controller {
     }
     public function logout() {
         $this->session->sess_destroy();
-        $this->session->set_flashdata('logout_notification', 'logged_out');
-
+        $this->session->set_flashdata('msg', 'logged Out');
         $this->load->view('login');
     }
 }
