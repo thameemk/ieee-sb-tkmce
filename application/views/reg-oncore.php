@@ -14,7 +14,7 @@
             <center><?php echo $this->session->flashdata('fail'); ?></center>
         </div>
         <?php endif; ?>
-                    <h3 class="mb-30 title_color" style="font-family: 'Montserrat';font-weight: normal;font-style: normal;">Register For OnCore</h3>
+                    <h3 class="mb-30 title_color" style="font-family: 'Montserrat';font-weight: normal;font-style: normal;">Register For TANGLED</h3>
                     <form action="<?=base_url()?>Pages/regOncoreForm" method="post">
                         <div class="mt-10">
                             <input type="text" name="name" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'" required class="single-input">

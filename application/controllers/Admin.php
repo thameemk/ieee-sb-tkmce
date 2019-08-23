@@ -33,8 +33,6 @@ class Admin extends CI_Controller {
         'venue' => $this->input->post('venue'),
         'category' => $this->input->post('category'),
         // 'attendice' => $this->input->post('attendice'),
-
-
       );
       $data['link']=$link;
       $this->report_model->form($data);
@@ -42,4 +40,11 @@ class Admin extends CI_Controller {
       redirect('Admin/home');
 
     }
+    public function onCore(){
+        $data['candid']=$this->report_model->candidOncore();      
+        $data['page_title'] = 'TANGLED - Admin Panel';
+        $this->load->view('templates/header',$data);
+        $this->load->view('admin_tangled');
+        $this->load->view('templates/footer');
+    }    
 }

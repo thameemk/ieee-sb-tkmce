@@ -112,4 +112,9 @@ class Report_model extends CI_Model {
     public function onCoreReg($data){
       $this->db->insert('onCoreReg', $data);
      }
+    public function candidOncore(){
+        // $this->db->select('clink','cname');
+        $query = $this->db->get('onCoreReg');
+        return $query->result_array();
+    }
 }

@@ -30,7 +30,7 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<style>
 	
-	.head-font{
+	.head-font,th,tr{
 		font-family: 'Montserrat', sans-serif;
 	}
 	.carousel-item {

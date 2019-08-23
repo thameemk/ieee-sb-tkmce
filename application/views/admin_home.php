@@ -3,11 +3,11 @@
 			<section  id="JOIN">
         <div class="container">
           <div class="section-top-border">
-            <h3 style="font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;" class="mb-30 text-center">Control Panel</h3>
+            <h3 style="font-family: 'Montserrat';font-weight: normal;font-style: normal;" class="mb-30 text-center">Control Panel</h3>
           <div class="col-lg-12 no-padding appoinment-right">
 
 						<?php if($this->session->flashdata('msg')): ?>
-    <h3  style="color:#00008B; font-family: 'BebasNeueRegular';font-weight: normal;font-style: normal;"><?php echo $this->session->flashdata('msg'); ?></h3>
+    <h3  style="color:#00008B; font-family: 'Montserrat';font-weight: normal;font-style: normal;"><?php echo $this->session->flashdata('msg'); ?></h3>
 <?php endif; ?>
                         <form class="appoinment-form" name="submit-to-google-sheet" action="process" method="post">
                             <div class="row">
