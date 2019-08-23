@@ -61,5 +61,5 @@ class Admin extends CI_Controller {
       $this->session->set_flashdata('msg', 'Data Inserted Successfully');
       redirect('Admin/home');
 
-    } 
+    }   
 }

@@ -1,13 +1,16 @@
 <br><br><br>
 <section class="mt-5 mb-5">
     <div class="container">
+        
+        <input type="text" class="form-control" id="mybatch" onkeyup="filterBybatch()" placeholder="Filter By Batch.." title="Type the batch">
+
          <?php if($this->session->flashdata('msg')): ?>
         <div class="alert alert-success" role="alert">
             <center><?php echo $this->session->flashdata('msg'); ?></center>
         </div>
         <?php endif; ?>
         <div class="table-responsive">
-        <table class="table table-hover table-striped ">
+        <table class="table table-hover table-striped " id="registerId">
             <thead>
                 <tr>
                     <th>SL NO</th>

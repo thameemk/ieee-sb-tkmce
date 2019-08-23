@@ -69,7 +69,7 @@
     setTimeout(carousel, 3000); // Change image every 2 seconds
   }
 </script>
-
+<script src="<?=base_url();?>/assets/front/js/filter.js"></script>
 <script src="<?=base_url();?>/assets/front/js/jquery-3.2.1.min.js"></script>
 <script src="<?=base_url();?>/assets/front/js/bootstrap.min.js"></script>
 <script src="<?=base_url();?>/assets/front/js/stellar.js"></script>
