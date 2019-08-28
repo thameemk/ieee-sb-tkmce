@@ -32,7 +32,17 @@
                             <p class="excert text-justify head-font">
                             <?=$update['full_content']?>
                             </p>
-
+                            <?php  if ($update['contact1']!=NULL){?>
+                            <p><b>For more details contact :</b></p>
+                            <?=$update['contactName1']?>&nbsp;&nbsp;<a href="tel:<?=$update['contact1']?>"><?=$update['contact1']?></a><br>
+                            <?php } ?>
+                            <?php  if ($update['contact2']!=NULL){?>
+                            <?=$update['contactName2']?>&nbsp;&nbsp;<a href="tel:<?=$update['contact2']?>"><?=$update['contact2']?></a><br>
+                            <?php }?>
+                            <!-- </details> -->
+                            <?php  if ($update['reg_link']!=NULL){?>
+                            <a class="genric-btn success circle mt-3" style="background:#0659fb;color:#fff;border:#fff;" href="<?=$update['reg_link']?>">Register Now</a>
+                            <?php } ?>
                         </div>
                         <div class="col-lg-12">
                             <div class="row">
@@ -51,13 +61,10 @@
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
                 <div class="col-lg-4">
                     <div class="blog_right_sidebar">
-                      
+
                         <aside class="single_sidebar_widget popular_post_widget">
                             <h3 class="widget_title">Latest Posts</h3>
                             <?php

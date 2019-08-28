@@ -75,13 +75,12 @@ class Pages extends CI_Controller {
     }
     else{
       $title1=$this->security->xss_clean($title);
-
+      $temp = str_replace("-"," ",$title);
+      $temp1 = ucfirst($temp);
+      $data['page_title'] = $temp1;
       $data['tags']=$this->report_model->get_tags();
       $data['pop_tags']=$this->report_model->pop_tags();
-
       $data['updates']=$this->report_model->updates();
-      $data['page_title'] = $title;
-
       $temp = $this->report_model->updates($title1);
       if(count($temp)==1){
       $data['update']=$temp[0];

@@ -24,7 +24,7 @@ class Report_model extends CI_Model {
       public function updates($title=""){
           $this->db->select('event_title,short_content,event_date,link');
           if($title!=""){
-            $this->db->select('full_content,img_link_1,img_link_2,img_link_3,img_link_4,img_link_5,venue,category');
+            $this->db->select('reg_link,full_content,img_link_1,img_link_2,img_link_3,img_link_4,img_link_5,venue,category,contact1,contact2,contactName1,contactName2');
             $this->db->where('link',$title);
           }
           $query = $this->db->get('updates');
@@ -112,7 +112,7 @@ class Report_model extends CI_Model {
     public function onCoreReg($data){
       $this->db->insert('onCoreReg', $data);
      }
-    public function candidOncore(){ 
+    public function candidOncore(){
         $query = $this->db->get('onCoreReg');
         return $query->result_array();
     }
