@@ -10,6 +10,7 @@ $route['stories'] = 'pages/stories';
 $route['stories/(.+)'] = 'pages/stories/$1';
 
 $route['updates'] = 'pages/updates';
+$route['updates/tangled/register'] = 'Pages/regOncore';
 $route['updates/(.+)'] = 'pages/updates/$1';
 
 $route['tags'] = 'pages/tags';
@@ -19,7 +20,6 @@ $route['tags/(.+)'] = 'pages/tags/$1';
 $route['team'] = 'pages/team';
 $route['admin_login'] = 'Login/index';
 
-$route['register-for-tangled'] = 'Pages/regOncore';
 
 
 $route['email'] = 'Email_Controller/index';

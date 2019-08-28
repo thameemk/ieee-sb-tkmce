@@ -88,9 +88,9 @@ class Pages extends CI_Controller {
       $this->load->view('static/single_updates',$data);
       $this->load->view('templates/footer');
     }
-    else {
-      {show_404();}
-    }
+        else {
+          {show_404();}
+        }
     }
   }
 
