@@ -128,11 +128,11 @@ class Pages extends CI_Controller {
     $registredusers = $query->num_rows();
     $remaining= '42' - $registredusers;
     // $data['remaining'] = '42' - $registredusers;
-    if($remaining!='0'){
+    if($remaining >'0'){
       $html = '<button class="genric-btn success circle"style="background:#0659fb;color:#fff;border:#fff;">'.$remaining. '&nbsp;&nbsp;Seats remaining! Register Now </button>';
     }
     else {
-      $html = '<button class="genric-btn success circle" style="background:#9C1F05;color:#fff;border:#fff;" disabled>'.$remaining. '&nbsp;&nbsp;Seats Available! </button>';
+      $html = '<button class="genric-btn success circle" style="background:#9C1F05;color:#fff;border:#fff;" disabled>&nbsp;&nbsp;No Seats Available! </button>';
     }
     $data['button'] = $html;
     $this->load->view('templates/header',$data);
@@ -143,7 +143,7 @@ class Pages extends CI_Controller {
     $query = $this->db->query('SELECT * FROM onCoreReg');
     $registredusers = $query->num_rows();
     $remaining= '42' - $registredusers;
-    if($remaining!='0'){
+    if($remaining >'0'){
         $data = $this->input->post();
         $data=$this->security->xss_clean($data);
         $this->form_validation->set_rules('email','Email','required|is_unique[onCoreReg.email]');
