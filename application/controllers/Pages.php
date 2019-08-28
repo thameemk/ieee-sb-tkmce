@@ -110,7 +110,7 @@ class Pages extends CI_Controller {
                $this->session->set_flashdata('msg', 'Fill all fields! ');
                redirect(base_url() . "stories");
            }
-    else{       
+    else{
       $data = array(
       'email' => $this->input->post('email'),
       );
@@ -123,40 +123,61 @@ class Pages extends CI_Controller {
     }
   }
   function regOncore(){
+    $html = "";
     $data['page_title'] = "Register for TANGLED";
+    $query = $this->db->query('SELECT * FROM onCoreReg');
+    $registredusers = $query->num_rows();
+    $remaining= '42' - $registredusers;
+    // $data['remaining'] = '42' - $registredusers;
+    if($remaining!='0'){
+      $html = '<button class="genric-btn success circle"style="background:#0659fb;color:#fff;border:#fff;">'.$remaining. '&nbsp;&nbsp;Seats remaining! Register Now </button>';
+    }
+    else {
+      $html = '<button class="genric-btn success circle" style="background:#9C1F05;color:#fff;border:#fff;" disabled>'.$remaining. '&nbsp;&nbsp;Seats Available! </button>';
+    }
+    $data['button'] = $html;
     $this->load->view('templates/header',$data);
-    $this->load->view('reg-oncore');
+    $this->load->view('reg-oncore',$data);
     $this->load->view('templates/footer');
   }
   function regOncoreForm(){
-    $data = $this->input->post();
-    $data=$this->security->xss_clean($data);
-    $this->form_validation->set_rules('email','Email','required|is_unique[onCoreReg.email]');
-    if($this->form_validation->run() == FALSE){
-        $this->session->set_flashdata('fail', 'You have already registred');
-        redirect('register-for-tangled');
-      }
-    else{
-        $this->form_validation->set_rules('name','Name','required');
-        $this->form_validation->set_rules('phone','Phone','required');
-        $this->form_validation->set_rules('batch','Batch','required');
+    $query = $this->db->query('SELECT * FROM onCoreReg');
+    $registredusers = $query->num_rows();
+    $remaining= '42' - $registredusers;
+    if($remaining!='0'){
+        $data = $this->input->post();
+        $data=$this->security->xss_clean($data);
+        $this->form_validation->set_rules('email','Email','required|is_unique[onCoreReg.email]');
         if($this->form_validation->run() == FALSE){
-        $this->session->set_flashdata('fail', 'Fill all fields');
-        redirect('register-for-tangled');
-        }
+            $this->session->set_flashdata('fail', 'You have already registred');
+            redirect('register-for-tangled');
+          }
         else{
-          $data = array(
-                      'name' => $this->input->post('name'),
-                      'email' => $this->input->post('email'),
-                      'phone' => $this->input->post('phone'),
-                      'batch' => $this->input->post('batch'),
-                    );
-          $this->report_model->OnCoreReg($data);
-          $this->session->set_flashdata('msg', 'Registration Success!');
-          redirect('register-for-tangled');
-        }
+            $this->form_validation->set_rules('name','Name','required');
+            $this->form_validation->set_rules('phone','Phone','required');
+            $this->form_validation->set_rules('batch','Batch','required');
+            if($this->form_validation->run() == FALSE){
+            $this->session->set_flashdata('fail', 'Fill all fields');
+            redirect('register-for-tangled');
+            }
+            else{
+              $data = array(
+                          'name' => $this->input->post('name'),
+                          'email' => $this->input->post('email'),
+                          'phone' => $this->input->post('phone'),
+                          'batch' => $this->input->post('batch'),
+                        );
+              $this->report_model->OnCoreReg($data);
+              $this->session->set_flashdata('msg', 'Registration Success!');
+              redirect('register-for-tangled');
+            }
 
-      }
+          }
+    }
+    else{
+      $this->session->set_flashdata('fail', 'No seats Available!');
+      redirect('register-for-tangled');
+    }
   }
 
 

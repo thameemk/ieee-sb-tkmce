@@ -26,7 +26,7 @@
                             <input type="text" name="phone" placeholder="Phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'" required class="single-input">
                         </div>
                         <div class="input-group-icon mt-10">
-                            <div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                            <!-- <div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div> -->
                             <div class="form-select" id="default-select2">
                                 <select name="batch">
                                     <option >Batch</option>
@@ -40,12 +40,12 @@
                                     <option value="e3b">E3B</option>
                                     <option value="r3">R3</option>
                                     <option value="p3">P3</option>
-                                    <option value="h3">H3</option>                                    
+                                    <option value="h3">H3</option>
                                 </select>
                             </div>
                         </div>
                         <div class="mt-10">
-                            <button class="genric-btn success circle">Register</button>
+                          <?=$button?>                          
                         </div>
                     </form>
                 </div>
