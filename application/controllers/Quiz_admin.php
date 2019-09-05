@@ -21,17 +21,17 @@ class Quiz_admin extends CI_Controller {
     public function signup(){
       $data = $this->input->post();
       $data = $this->security->xss_clean($data);
-      $this->form_validation->set_rules('email','User Email','required|is_unique[login_users.email]');
+      $this->form_validation->set_rules('email','User Email','required|is_unique[pes_users.email]');
       if($this->form_validation->run() == FALSE){
         $this->session->set_flashdata('msgreq', 'You have already registred');
-        redirect('pesquiz/pes_signup');
+        redirect('pes_signup');
       }
       else{
       $this->form_validation->set_rules('password', 'Password', 'required');
       $this->form_validation->set_rules('passconf', 'Re-enter', 'required|matches[password]');
           if($this->form_validation->run() == FALSE){
             $this->session->set_flashdata('msgreq', 'Password doesnot match');
-            redirect('pesquiz/pes_signup');
+            redirect('pes_signup');
           }
           else {
             $this->form_validation->set_rules('name','Name','required');
@@ -39,7 +39,7 @@ class Quiz_admin extends CI_Controller {
             $this->form_validation->set_rules('batch','batch','required');
                 if($this->form_validation->run() == FALSE){
                      $this->session->set_flashdata('msgreq', 'Fill all fields! ');
-                     redirect('pesquiz/pes_signup');
+                     redirect('pes_signup');
                  }
                 else {
                     $data = array(
@@ -47,11 +47,11 @@ class Quiz_admin extends CI_Controller {
                       'batch' => $this->input->post('batch'),
                       'email' => $this->input->post('email'),
                       'phone' => $this->input->post('phone'),
-                      'user_password' => password_hash($this->input->post('password'),PASSWORD_BCRYPT),
+                      'password' => password_hash($this->input->post('password'),PASSWORD_BCRYPT),
                     );
                     $this->pes_quiz->pesUserRegister($data);
                     $this->session->set_flashdata('msg', 'Registration Success!');
-                    redirect('pesquiz/pes_signup');
+                    redirect('pes_signup');
                   }
                 }
           }

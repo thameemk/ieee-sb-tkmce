@@ -37,7 +37,7 @@
 				<button type="submit" class="btn btn-primary submit mt-2">Login</button>
 				<p class="text-center mt-2">
           <a class="ml-3" href="<?=base_url()?>home">Home</a>
-
+          <a class="ml-3" href="<?=base_url()?>pes_signup">Register</a>          
 				</p>
 			</form>
 		</div>
