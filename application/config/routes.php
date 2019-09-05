@@ -19,8 +19,9 @@ $route['tags/(.+)'] = 'pages/tags/$1';
 
 $route['team'] = 'pages/team';
 $route['admin_login'] = 'Login/index';
-$route['pes_login'] = 'Quiz_admin/index';
 
+$route['pes_login'] = 'Quiz_admin/index';
+$route['pes_signup'] = 'Quiz_admin/pes_signup';
 
 
 $route['email'] = 'Email_Controller/index';

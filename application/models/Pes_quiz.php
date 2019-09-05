@@ -1,27 +1,27 @@
 <?php
-class Report_model extends CI_Model {
+class Pes_quiz extends CI_Model {
     public function __construct()
     {
         $this->load->database();
 
     }
-    public function login(){
-     $user_email = $this->security->xss_clean($this->input->post('user_email'));
+    public function pesUserLogin(){
+     $email = $this->security->xss_clean($this->input->post('email'));
      $password = $this->security->xss_clean($this->input->post('password'));
 
-     $this->db->where('user_email',$user_email);
+     $this->db->where('email',$email);
 
-     $query=$this->db->get('login_users');
+     $query=$this->db->get('pes_users');
      // $num_rows=$this->db->count_all_results('userlogin');
 
      $num_rows=$query->num_rows();
      if($num_rows == 1)
      {
            $row = $query->row();
-           if (password_verify($password, $row->user_password)) {
+           if (password_verify($password, $row->password)) {
                $data = array(
-                   'lid' => $row->lid,
-                   'user_email' => $row->user_email,
+                   'pid' => $row->pid,
+                   'email' => $row->email,
                    'validated' => true
                );
                $this->session->set_userdata($data);
@@ -32,5 +32,9 @@ class Report_model extends CI_Model {
            return true;
        }
        return false;
+   }
+
+   public function pesUserRegister($data){
+     $this->db->insert('pes_users', $data);
    }
 }
