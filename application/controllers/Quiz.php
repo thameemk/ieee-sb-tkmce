@@ -28,14 +28,18 @@ class Quiz extends CI_Controller {
           date_default_timezone_set("Asia/Calcutta");
           $currentDateTime = date('Y-m-d H:i:s');
           $startTime = '2019-09-06 23:49:45';
+          $endtime = '2019-09-06 23:49:45';
           // echo $currentDateTime;
           if($currentDateTime < $startTime){
           $temp['time'] = $currentDateTime;
           $temp['startTime'] = $startTime;
           $this->load->view('pesquiz/pes_time',$temp);
           }
-          else {
+          elseif($startTime<$endtime) {
             $this->load->view('pesquiz/pes_home');
+          }
+          else{
+            echo "Time Over";
           }
         }
         else{
