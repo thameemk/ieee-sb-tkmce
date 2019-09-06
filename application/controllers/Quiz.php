@@ -15,15 +15,16 @@ class Quiz extends CI_Controller {
 
     public function home(){
         $email = $_SESSION['email'];
-        $data['user'] = $this->pes_quiz->pesUserStatus($email);
+        $data = $this->pes_quiz->pesUserStatus($email);
+        $temp['user'] = $this->pes_quiz->pesUserStatus($email);
         foreach ($data as $row) {
           $paymentStatus = $row['payment_status'];
         }
         if($paymentStatus == '0'){
-          $this->load->view('pesquiz/pes_verify',$data);
+          $this->load->view('pesquiz/pes_verify',$temp);
         }
         elseif($paymentStatus == '1'){
-          $this->load->view('pesquiz/pes_home');
+          $this->load->view('pesquiz/pes_time',$temp);
         }
     }
 }
