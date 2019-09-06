@@ -37,4 +37,9 @@ class Pes_quiz extends CI_Model {
    public function pesUserRegister($data){
      $this->db->insert('pes_users', $data);
    }
+   public function pesUserStatus($email){
+     $this->db->where('email',$email);
+     $query = $this->db->get('pes_users');
+     return $query->result_array();
+   }
 }

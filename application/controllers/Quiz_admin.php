@@ -12,7 +12,7 @@ class Quiz_admin extends CI_Controller {
     {
 
         if($this->session->userdata('email')) {
-            redirect('Quiz/home');
+            redirect('Quiz/verify');
         }
 
         $this->load->view('pesquiz/pes_login');

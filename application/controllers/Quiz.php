@@ -12,7 +12,18 @@ class Quiz extends CI_Controller {
             redirect('pes_login');
         }
     }
+
     public function home(){
-        $this->load->view('pesquiz/pes_home');
+        $email = $_SESSION['email'];
+        $data['user'] = $this->pes_quiz->pesUserStatus($email);
+        foreach ($data as $row) {
+          $paymentStatus = $row['payment_status'];
+        }
+        if($paymentStatus == '0'){
+          $this->load->view('pesquiz/pes_verify',$data);
+        }
+        elseif($paymentStatus == '1'){
+          $this->load->view('pesquiz/pes_home');
+        }
     }
 }
