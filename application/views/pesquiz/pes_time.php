@@ -18,4 +18,6 @@
   Payment Status : <?=$paymentStatus?>
   <br><br>
 <?php } ?>
-Quiz will begin in 2 hrs
+Current Time :  <?=$time?>
+<br><br>
+Start Time :  <?=$startTime?>
