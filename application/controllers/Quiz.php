@@ -46,4 +46,16 @@ class Quiz extends CI_Controller {
           echo "Contact Web Admin : 8281582725";
         }
     }
+    public function process(){
+      date_default_timezone_set("Asia/Calcutta");
+      $currentDateTime = date('Y-m-d H:i:s');
+      $startTime = '2019-09-06 23:49:45';
+      $endtime = '2019-09-07 00:10:00';
+      if($currentDateTime<$endtime){
+
+      }
+      else{
+        echo "Time Over";
+      }
+    }
 }
