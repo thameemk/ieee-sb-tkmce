@@ -22,6 +22,7 @@ class Quiz_admin extends CI_Controller {
       $data = $this->input->post();
       $data = $this->security->xss_clean($data);
       $this->form_validation->set_rules('email','User Email','required|is_unique[pes_users.email]');
+      $this->form_validation->set_rules('phone','Phone Number','required|is_unique[pes_users.phone]');      
       if($this->form_validation->run() == FALSE){
         $this->session->set_flashdata('msgreq', 'You have already registred');
         redirect('pes_signup');
@@ -35,7 +36,6 @@ class Quiz_admin extends CI_Controller {
           }
           else {
             $this->form_validation->set_rules('name','Name','required');
-            $this->form_validation->set_rules('phone','Phone Number','required');
             $this->form_validation->set_rules('batch','batch','required');
                 if($this->form_validation->run() == FALSE){
                      $this->session->set_flashdata('msgreq', 'Fill all fields! ');
