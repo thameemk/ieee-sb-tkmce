@@ -3,20 +3,21 @@
 
 <head>
 	<meta charset="utf-8">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138758491-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-138758491-1');
+</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Official website of IEEE Student Branch, TKM College of Engineering.">
 	<meta name="keywords" content="IEEE,IEEE SB TKMCE,IEEEorg,IEEER10,TKMCE,TKM College of engineering,IEEE Kerala,">
 	<link rel="icon" href="<?=base_url();?>/assets/front/img/ieee_mb_blue.png" type="image/png">
 	<title><?php echo $page_title; ?> - IEEE SB TKMCE</title>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138758491-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-138758491-1');
-</script>
 
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/css/bootstrap.css">
 	<link rel="stylesheet" href="<?=base_url();?>/assets/front/vendors/linericon/style.css">
@@ -29,7 +30,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<style>
-	
+
 	.head-font,th,tr{
 		font-family: 'Montserrat', sans-serif;
 	}
@@ -43,7 +44,7 @@
 		background-size: cover;
 		width:100%;
   		height:500px;
-	}	
+	}
 	.team-font{
 		font-family: 'Lato';
 	}
