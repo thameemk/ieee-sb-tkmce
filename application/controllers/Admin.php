@@ -33,11 +33,18 @@ class Admin extends CI_Controller {
             $this->load->view('admin_home');
             $this->load->view('templates/footer');
         }
-        else{
+        else if($_SESSION['status']=='1'){
             $data['candid']=$this->report_model->candidOncore();      
             $data['page_title'] = 'TANGLED - Admin Panel';
             $this->load->view('templates/header',$data);
             $this->load->view('admin_tangled');
+            $this->load->view('templates/footer');
+        }
+        else{
+            $data['candid']=$this->report_model->candidRegPlcScada();      
+            $data['page_title'] = 'PLC & SCADA - Admin Panel';
+            $this->load->view('templates/header',$data);
+            $this->load->view('admin_plc');
             $this->load->view('templates/footer');
         }
     }

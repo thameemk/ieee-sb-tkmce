@@ -179,5 +179,48 @@ class Pages extends CI_Controller {
     }
   }
 
+  function plcScadaWorkshop(){
+    $data['page_title'] = "Register - PLC & SCADA Workshop";
+    $this->load->view('templates/header',$data);
+    $this->load->view('plcScadaWorkshop',$data);
+    $this->load->view('templates/footer');
+  }
+  function regPlcScadaWorkshop(){    
+        $data = $this->input->post();
+        $data=$this->security->xss_clean($data);
+        $this->form_validation->set_rules('email','Email','required|is_unique[plcScada.email]');
+        $this->form_validation->set_rules('phone','Phone','required|is_unique[plcScada.phone]');
+        if($this->form_validation->run() == FALSE){
+            $this->session->set_flashdata('fail', 'You have already registred');
+            redirect('updates/plc-and-scada-workshop/register');
+          }
+        else{
+            $this->form_validation->set_rules('name','Name','required');
+            $this->form_validation->set_rules('year','Year','required');
+            $this->form_validation->set_rules('batch','Batch','required');
+            $this->form_validation->set_rules('ieee-member','Ieee Member','required');
+            $this->form_validation->set_rules('laptop','Laptop','required');
+            if($this->form_validation->run() == FALSE){
+            $this->session->set_flashdata('fail', 'Fill all fields');
+            redirect('updates/plc-and-scada-workshop/register');
+            }
+            else{
+              $data = array(
+                          'name' => $this->input->post('name'),
+                          'email' => $this->input->post('email'),
+                          'phone' => $this->input->post('phone'),
+                          'batch' => $this->input->post('batch'),
+                          'year' => $this->input->post('year'),
+                          'laptop' => $this->input->post('laptop'),
+                          'ieee-member' => $this->input->post('ieee-member'),
+                        );
+              $this->report_model->regPlcScada($data);
+              $this->session->set_flashdata('msg', 'Registration Success!');
+              redirect('updates/plc-and-scada-workshop/register');
+            }
+
+          }
+    }  
+
 
 }

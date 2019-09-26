@@ -10,7 +10,8 @@ $route['stories'] = 'pages/stories';
 $route['stories/(.+)'] = 'pages/stories/$1';
 
 $route['updates'] = 'pages/updates';
-$route['updates/tangled/register'] = 'Pages/regOncore';
+// $route['updates/tangled/register'] = 'Pages/regOncore';
+$route['updates/plc-and-scada-workshop/register'] = 'Pages/plcScadaWorkshop';
 $route['updates/(.+)'] = 'pages/updates/$1';
 
 $route['tags'] = 'pages/tags';

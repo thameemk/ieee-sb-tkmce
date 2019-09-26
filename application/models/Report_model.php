@@ -116,4 +116,11 @@ class Report_model extends CI_Model {
         $query = $this->db->get('onCoreReg');
         return $query->result_array();
     }
+    public function regPlcScada($data){
+      $this->db->insert('plcScada', $data);
+    }
+    public function candidRegPlcScada(){
+      $query = $this->db->get('plcScada');
+      return $query->result_array();
+  }
 }
