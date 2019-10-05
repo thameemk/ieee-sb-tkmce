@@ -185,7 +185,7 @@ class Pages extends CI_Controller {
     $this->load->view('plcScadaWorkshop',$data);
     $this->load->view('templates/footer');
   }
-  function regPlcScadaWorkshop(){    
+  function regPlcScadaWorkshop(){
         $data = $this->input->post();
         $data=$this->security->xss_clean($data);
         $this->form_validation->set_rules('email','Email','required|is_unique[plcScada.email]');
@@ -213,6 +213,7 @@ class Pages extends CI_Controller {
                           'year' => $this->input->post('year'),
                           'laptop' => $this->input->post('laptop'),
                           'ieee-member' => $this->input->post('ieee-member'),
+                          'ias-member' => $this->input->post('ias-member'),                          
                         );
               $this->report_model->regPlcScada($data);
               $this->session->set_flashdata('msg', 'Registration Success!');
@@ -220,7 +221,7 @@ class Pages extends CI_Controller {
             }
 
           }
-    }  
+    }
 
 
 }

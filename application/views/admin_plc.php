@@ -1,7 +1,7 @@
 <br><br><br>
 <section class="mt-5 mb-5">
     <div class="container">
-        
+
         <input type="text" class="form-control" id="plc" onkeyup="filterBybatch()" placeholder="Filter By Batch.." title="Type the batch">
 
          <?php if($this->session->flashdata('msg')): ?>
@@ -19,6 +19,7 @@
                     <th>EMAIL</th>
                     <th>PHONE</th>
                     <th>IEEE Member</th>
+                    <th>IEEE IAS Member</th>
                     <th>Laptop</th>
                 </tr>
             </thead>
@@ -38,9 +39,10 @@
                             <?=$row['email']?></a></td>
                     <td><a href="tel:<?=$row['phone']?>">
                             <?=$row['phone']?></a></td>
-                    <td> <?=$row['ieee-member']?></td> 
-                    <td> <?=$row['laptop']?></td> 
-                           
+                    <td> <?=$row['ieee-member']?></td>
+                    <td> <?=$row['ias-member']?></td>                    
+                    <td> <?=$row['laptop']?></td>
+
                 </tr>
                 <?php } ?>
             </tbody>
@@ -65,7 +67,7 @@ function filterBybatch() {
       } else {
         tr[i].style.display = "none";
       }
-    }       
+    }
   }
 }
 </script>

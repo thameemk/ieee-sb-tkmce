@@ -61,6 +61,16 @@
                                         <input type="radio" name="ieee-member" value="no">
 
                                     </div>
+                                    
+                                    <b style="color:black">Are you a IEEE IAS member?</b>
+                                            <div class="mt-10 mb-3">
+                                                <span style="color:black"> Yes</span>
+                                                <input type="radio" name="ias-member" value="yes">
+                                                <span class="ml-3" style="color:black">No</span>
+                                                <input type="radio" name="ias-member" value="no">
+
+                                            </div>
+
                                     <b style="color:black">Can you bring your own Laptop?</b>
                                             <div class="mt-10">
                                                 <span style="color:black"> Yes</span>
