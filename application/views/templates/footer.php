@@ -34,7 +34,7 @@
             <h5 class="head-font mt-3" style="letter-spacing: .1em;">Counselor</h5>
             Mrs. Reshna S : <a href="tel:+919496410839">+91 9496410839</a>
             <h5 class="head-font mt-3">Webmaster</h5>
-            <a href="//thameem.me/" target="_blank">Thameem K +91 8281582725</a>
+            <a href="//thameem.me/" style="color:#777777;" target="_blank">Thameem K :</a><a href="tel:+918281582725"> +91 8281582725</a>
           </p>
         </div>
       </div>
@@ -44,11 +44,11 @@
         IEEE SB TKMCE | <?php
         date_default_timezone_set("Asia/Calcutta");
         $temp = date("Y-m-d");
-        
+
         echo $temp;  ?> IST
         </b>
       </p>
-     
+
     </div>
   </div>
 </footer>
