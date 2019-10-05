@@ -1,3 +1,13 @@
+<script type="text/javascript">
+
+function yesnoCheck() {
+    if (document.getElementById('yesCheck').checked) {
+        document.getElementById('ifYes').style.display = 'block';
+    }
+    else document.getElementById('ifYes').style.display = 'none';
+
+}
+</script>
 <section style="padding-top:100px;">
     <div class="whole-wrap">
         <div class="container">
@@ -56,12 +66,11 @@
                             <b style="color:black">Are you a IEEE member?</b>
                                     <div class="mt-10 mb-3">
                                         <span style="color:black"> Yes</span>
-                                        <input type="radio" name="ieee-member" value="yes">
+                                        <input type="radio" onclick="javascript:yesnoCheck();" id="yesCheck" name="ieee-member" value="yes">
                                         <span class="ml-3" style="color:black">No</span>
-                                        <input type="radio" name="ieee-member" value="no">
-
+                                        <input type="radio" onclick="javascript:yesnoCheck();" id="noCheck" name="ieee-member" value="no">
                                     </div>
-                                    
+                                    <div id="ifYes" style="display:none">
                                     <b style="color:black">Are you a IEEE IAS member?</b>
                                             <div class="mt-10 mb-3">
                                                 <span style="color:black"> Yes</span>
@@ -70,7 +79,7 @@
                                                 <input type="radio" name="ias-member" value="no">
 
                                             </div>
-
+                                    </div>
                                     <b style="color:black">Can you bring your own Laptop?</b>
                                             <div class="mt-10">
                                                 <span style="color:black"> Yes</span>
