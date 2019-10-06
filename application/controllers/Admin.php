@@ -78,7 +78,7 @@ class Admin extends CI_Controller {
     }
     public function verify(){
       $email = $this->input->post('email');
-      // https://stackoverflow.com/questions/42430884/update-status-value-in-backend-while-click-on-button-in-codeigniter/42431702
       $this->pes_quiz->paymentVerify($email);
+      redirect('Admin/home');      
     }
 }

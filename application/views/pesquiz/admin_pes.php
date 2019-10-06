@@ -52,6 +52,7 @@
                     </td>
                     <td>
                       <form action="<?=base_url("Admin/verify")?>" method="post">
+                        <input type="hidden" name="email" value="<?=$row['email']?>">
                         <button type="submit">Verify</button>
                       </form>
                     </td>
