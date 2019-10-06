@@ -7,7 +7,6 @@ class Quiz extends CI_Controller {
         parent::__construct();
         $this->load->helper(array('form', 'url'));
         $this->load->model('pes_quiz');
-
         if(!$this->session->userdata('email')) {
             redirect('pes_login');
         }
@@ -19,7 +18,9 @@ class Quiz extends CI_Controller {
         $temp['user'] = $this->pes_quiz->pesUserStatus($email);
         foreach ($data as $row) {
           $paymentStatus = $row['payment_status'];
+          // echo $paymentStatus;
         }
+        // exit;
         if($paymentStatus == '0'){
           $this->load->view('pesquiz/pes_verify',$temp);
         }
@@ -27,7 +28,7 @@ class Quiz extends CI_Controller {
           // $startdate=date('Y-m-d', strtotime($data['event']->reg_start));
           date_default_timezone_set("Asia/Calcutta");
           $currentDateTime = date('Y-m-d H:i:s');
-          $startTime = '2019-09-06 23:49:45';
+          $startTime = '2019-10-05 23:49:45';
           $endtime = '2019-09-07 00:10:00';
           // echo $currentDateTime;
           if($currentDateTime < $startTime){

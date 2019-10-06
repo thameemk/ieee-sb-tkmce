@@ -42,4 +42,13 @@ class Pes_quiz extends CI_Model {
      $query = $this->db->get('pes_users');
      return $query->result_array();
    }
+   public function pesQuizUser(){
+     $query = $this->db->get('pes_users');
+     return $query->result_array();
+   }
+   public function paymentVerify($email){
+     $this->db->where('email',$email);
+     $query = $this->db->update('pes_users','payment_status' => '1');
+     return $query->result_array();
+   }
 }
