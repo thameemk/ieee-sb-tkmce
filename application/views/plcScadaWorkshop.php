@@ -58,8 +58,10 @@ function yesnoCheck() {
                                 <div class="form-select" id="default-select2">
                                     <select name="year">
                                         <option>Year</option>
-                                        <option value="third">Third Year</option>
                                         <option value="fourth">Fourth Year</option>
+                                        <option value="third">Third Year</option>
+                                        <option value="fourth">Second Year</option>
+                                        <option value="fourth">First Year</option>
                                     </select>
                                 </div>
                             </div>
