@@ -16,6 +16,7 @@
                     <th>SL NO</th>
                     <th>NAME</th>
                     <th>YEAR & BATCH</th>
+                    <th>College</th>
                     <th>EMAIL</th>
                     <th>PHONE</th>
                     <th>IEEE Member</th>
@@ -35,12 +36,15 @@
                     <td>
                     <?=$row['year']?>&nbsp;<?=$row['batch']?>
                     </td>
+                    <td>
+                        <?=$row['college']?>
+                    </td>
                     <td><a href="mailto:<?=$row['email']?>">
                             <?=$row['email']?></a></td>
                     <td><a href="tel:<?=$row['phone']?>">
                             <?=$row['phone']?></a></td>
                     <td> <?=$row['ieee-member']?></td>
-                    <td> <?=$row['ias-member']?></td>                    
+                    <td> <?=$row['ias-member']?></td>
                     <td> <?=$row['laptop']?></td>
 
                 </tr>

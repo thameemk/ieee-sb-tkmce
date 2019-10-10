@@ -40,6 +40,10 @@ function yesnoCheck() {
                                 <input type="text" name="phone" placeholder="Phone" onfocus="this.placeholder = ''"
                                     onblur="this.placeholder = 'Phone'" required class="single-input">
                             </div>
+                            <div class="mt-10">
+                                <input type="text" name="college" placeholder="College" onfocus="this.placeholder = ''"
+                                    onblur="this.placeholder = 'College'" required class="single-input">
+                            </div>
                             <div class="input-group-icon mt-10">
                                 <div class="form-select" id="default-select2">
                                     <select name="batch">
@@ -51,6 +55,7 @@ function yesnoCheck() {
                                         <option value="mech-pro">Mech Pro</option>
                                         <option value="chemical">Chemical</option>
                                         <option value="civil">Civil</option>
+                                        <option value="other">Other</option>
                                     </select>
                                 </div>
                             </div>

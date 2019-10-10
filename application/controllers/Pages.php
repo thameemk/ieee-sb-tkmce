@@ -198,6 +198,7 @@ class Pages extends CI_Controller {
             $this->form_validation->set_rules('name','Name','required');
             $this->form_validation->set_rules('year','Year','required');
             $this->form_validation->set_rules('batch','Batch','required');
+            $this->form_validation->set_rules('college','College','required');
             $this->form_validation->set_rules('ieee-member','Ieee Member','required');
             $this->form_validation->set_rules('laptop','Laptop','required');
             if($this->form_validation->run() == FALSE){
@@ -210,10 +211,11 @@ class Pages extends CI_Controller {
                           'email' => $this->input->post('email'),
                           'phone' => $this->input->post('phone'),
                           'batch' => $this->input->post('batch'),
+                          'college' => $this->input->post('college'),                          
                           'year' => $this->input->post('year'),
                           'laptop' => $this->input->post('laptop'),
                           'ieee-member' => $this->input->post('ieee-member'),
-                          'ias-member' => $this->input->post('ias-member'),                          
+                          'ias-member' => $this->input->post('ias-member'),
                         );
               $this->report_model->regPlcScada($data);
               $this->session->set_flashdata('msg', 'Registration Success!');
