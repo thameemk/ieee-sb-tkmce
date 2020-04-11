@@ -24,4 +24,13 @@
 #### _sample [database.php](https://gist.github.com/thameemk612/b5e86a7fa97dd093b8fc2f9269dc6356) and set databse details._
 
 ## ___View sample UI___
- 
+ ![image 1](https://raw.githubusercontent.com/thameemk612/ieee-sb-tkmce/master/img-git/1.png?token=AH47VIGZZGIKYFK5HJ7IRYC6TM5CG)
+
+
+ ![image 2](https://raw.githubusercontent.com/thameemk612/ieee-sb-tkmce/master/img-git/2.png?token=AH47VIAOQBUPFQXLVJPT2EC6TM5IO)
+
+ ![image 3](https://raw.githubusercontent.com/thameemk612/ieee-sb-tkmce/master/img-git/3.png?token=AH47VIE2NYD52VCJV4X5TFC6TM5LO)
+
+ ![image 4](https://raw.githubusercontent.com/thameemk612/ieee-sb-tkmce/master/img-git/4.png?token=AH47VIGDGAB5WYFA22XPWUK6TM5LK)
+
+![image 5](https://raw.githubusercontent.com/thameemk612/ieee-sb-tkmce/master/img-git/5.png?token=AH47VIGXNSCAQR27CE7D7S26TM5LQ)
