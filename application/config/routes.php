@@ -18,7 +18,6 @@ $route['tags'] = 'pages/tags';
 $route['tags/(.+)'] = 'pages/tags/$1';
 
 
-$route['team'] = 'pages/team';
 $route['admin_login'] = 'Login/index';
 
 $route['pes_login'] = 'Quiz_admin/index';

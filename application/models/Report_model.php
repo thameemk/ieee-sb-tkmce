@@ -123,4 +123,14 @@ class Report_model extends CI_Model {
       $query = $this->db->get('plcScada');
       return $query->result_array();
   }
+    public function execomInfo()
+   {
+     $query = $this->db->get('team');
+     return $query->result_array();
+   }
+   public function execomYear()
+   {
+     $query = $this->db->get('teamYear');
+     return $query->result_array();
+   }
 }

@@ -29,6 +29,8 @@ class Pages extends CI_Controller {
       }
       $temp = ucfirst($page);
       $data['page_title'] = $temp;
+      $data['execomYear'] = $this->report_model->execomYear();
+      $data['execom'] = $this->report_model->execomInfo();
       $this->load->view('templates/header',$data);
       $this->load->view('static/'.$page);
       $this->load->view('templates/footer');
@@ -94,13 +96,6 @@ class Pages extends CI_Controller {
     }
   }
 
-  function team(){
-    $data['page_title'] = 'Execom';
-    $data['team']=$this->report_model->get_team();
-    $this->load->view('templates/header',$data);
-    $this->load->view('static/team',$data);
-    $this->load->view('templates/footer');
-  }
   function news_letter(){
     $data = $this->input->post();
     $data=$this->security->xss_clean($data);
@@ -211,7 +206,7 @@ class Pages extends CI_Controller {
                           'email' => $this->input->post('email'),
                           'phone' => $this->input->post('phone'),
                           'batch' => $this->input->post('batch'),
-                          'college' => $this->input->post('college'),                          
+                          'college' => $this->input->post('college'),
                           'year' => $this->input->post('year'),
                           'laptop' => $this->input->post('laptop'),
                           'ieee-member' => $this->input->post('ieee-member'),
